@@ -21,12 +21,12 @@ ui <- fluidPage(titlePanel("3 star Michelin restaurant"),
                   
                   
                   column(8,
-                         leafletOutput(outputId = "mymap"),
-                         tableOutput("results")
+                         leafletOutput(outputId = "mymap",height="900"),
+                         #tableOutput("results")
                          ),
                          
                   column(2,
                          sliderInput("comfosrtInput", "Placeholder for restaurant list", 1, 5, c(1, 5), pre = ""),
-                         fluidRow(verbatimTextOutput("Click_text"))
+                         
                 )),
                 )
