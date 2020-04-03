@@ -1,4 +1,10 @@
+library(shiny)
+library(ggplot2)
+library(dplyr)
+library(shinyWidgets)
 library(leaflet)
+library(rgdal)
+
 ui <- fluidPage(titlePanel("3 star Michelin restaurant"),
                 fluidRow(
                   column(

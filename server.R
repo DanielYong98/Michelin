@@ -5,7 +5,7 @@ library(shinyWidgets)
 library(leaflet)
 library(rgdal)
 #C:/Users/DAN/Desktop/IVP proj/CW2/RStudio/Michelin
-setwd("C:/Users/DAN/Desktop/IVP proj/CW2/RStudio/Michelin/Michelin")
+#setwd("C:/Users/DAN/Desktop/IVP proj/CW2/RStudio/Michelin/Michelin")
 mcl <-
   read.csv("michelin3star.csv", stringsAsFactors = FALSE)
 
@@ -13,7 +13,7 @@ mcl <-
 # download.file("http://thematicmapping.org/downloads/TM_WORLD_BORDERS_SIMPL-0.3.zip" , destfile="TM_WORLD_BORDERS_SIMPL-0.3.zip")
 # ## Unzip them ##
 # unzip("TM_WORLD_BORDERS_SIMPL-0.3.zip")
-myspdf = readOGR(dsn=getwd(), layer="TM_WORLD_BORDERS_SIMPL-0.3")
+myspdf = readOGR(dsn = getwd(), layer = "TM_WORLD_BORDERS_SIMPL-0.3")
 
 server <- function(input, output) {
   output$cuisineOutput <- renderUI({
@@ -52,59 +52,80 @@ server <- function(input, output) {
   
   #map function
   output$mymap <- renderLeaflet({
-    leaflet(data=myspdf,
+    leaflet(
+      data = myspdf,
       options = leafletOptions(
         zoomControl = FALSE,
-        dragging = FALSE,
+        dragging = TRUE,
         zoomSnap = 0.5,
         zoomDelta = 0.5,
-        minZoom = 2.5
+        minZoom = 2.5,
+        maxZoom = 4
       )
     ) %>% setView(lng = 10,
                   lat = 42,
-                  zoom = 2.5) %>%
-      addProviderTiles(providers$OpenStreetMap.DE) %>% addMarkers(
-        data = filtered(),
-        lat = ~ Latitude,
-        lng = ~ Longitude,
-        label = ~ Restaurant_name,
-        popup = ~ paste(
-          "<strong>",
-          Restaurant_name,
-          "</strong>",
-          "<br>",
-          "Cuisine: ",
-          Cuisine_Type,
-          "<br>",
-          "Awarded year: ",
-          Awarded_since,
-          "<br>",
-          "Chef: ",
-          Chef,
-          "<br>",
-          "Specialty: ",
-          Specialty,
-          "<br>"
-        ),
-        
-      )%>%addPolygons(fillColor = "green",
-                      highlight = highlightOptions(weight = 5,
-                                                   color = "red",
-                                                   fillOpacity = 0.7,
-                                                   bringToFront = TRUE),
-                      )
+                  zoom = 2.5) %>% setMaxBounds(
+                    lng1 = -180,
+                    lat1 = -85,
+                    lng2 = 180,
+                    lat2 = 85
+                  ) %>% addProviderTiles(providers$OpenStreetMap.DE) %>% addMarkers(
+                    data = filtered(),
+                    lat = ~ Latitude,
+                    lng = ~ Longitude,
+                    label = ~ Restaurant_name,
+                    popup = ~ paste(
+                      "<strong>",
+                      Restaurant_name,
+                      "</strong>",
+                      "<br>",
+                      "Cuisine: ",
+                      Cuisine_Type,
+                      "<br>",
+                      "Awarded year: ",
+                      Awarded_since,
+                      "<br>",
+                      "Chef: ",
+                      Chef,
+                      "<br>",
+                      "Specialty: ",
+                      Specialty,
+                      "<br>"
+                    ),
+                    
+                  ) %>% addPolygons(
+                    fillColor = "green",
+                    opacity = .7,
+                    weight = 1,
+                    color = "null",
+                    highlight = highlightOptions(
+                      weight = 1,
+                      color = "black",
+                      fillOpacity = 0.5,
+                      bringToFront = TRUE
+                    ),
+                    label =  ~ NAME,
+                    layerId = ~ NAME
+                  )
     
   })
-  observe(
-    {  click = input$mymap_shape_click
-    if(is.null(click))
+  observe({
+    click = input$mymap_shape_click
+    #  subset the spdf object to get the lat, lng and country name of the selected shape (Country in this case)
+    sub = myspdf[myspdf$NAME == input$mymap_shape_click$id, c("LAT", "LON", "NAME")]
+    lat = sub$LAT
+    lng = sub$LON
+    nm = sub$NAME
+    if (is.null(click))
       return()
     else
       leafletProxy("mymap") %>%
-      setView(lng = click$lng , lat = click$lat, zoom = 4)
+      setView(lng = lng ,
+              lat = lat,
+              zoom = 5)
     
-    }
-  )
+    
+  })
   
   
   

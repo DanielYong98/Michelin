@@ -5,8 +5,8 @@ account: kefey6dyz
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2034789
-bundleId: 2958489
+bundleId: 2959760
 url: https://kefey6dyz.shinyapps.io/Michelin/
-when: 1585822454.82391
+when: 1585840799.17776
 asMultiple: FALSE
 asStatic: FALSE
