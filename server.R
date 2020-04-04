@@ -19,12 +19,14 @@ worldcountry = geojson_read("countries.geojson", what = "sp")
 
 # select Micheline countries for mapping polygons
 mcl_countries = mcl$Country_ID
-if (all(mcl_countries %in% worldcountry$id)==FALSE) { print("Error: inconsistent country names")}
+if (all(mcl_countries %in% worldcountry$id) == FALSE) {
+  print("Error: inconsistent country names")
+}
 
 # create plotting parameters for map
-bins = c(1,10,20,30)
+bins = c(1, 10, 20, 30)
 legend <- colorBin("green", domain = mcl_countries, bins = bins)
-plot_map = worldcountry[worldcountry$id %in% mcl_countries, ]
+plot_map = worldcountry[worldcountry$id %in% mcl_countries,]
 
 server <- function(input, output) {
   output$cuisineOutput <- renderUI({
@@ -59,6 +61,13 @@ server <- function(input, output) {
       )
   })
   
+  bluePinIcon <- makeIcon(
+    iconUrl = "blue-pin.png",
+    iconWidth = 30,
+    iconHeight = 30,
+    iconAnchorX = 15,
+    iconAnchorY = 30
+  )
   
   #map function
   output$mymap <- renderLeaflet({
@@ -78,55 +87,85 @@ server <- function(input, output) {
                     lat1 = -85,
                     lng2 = 180,
                     lat2 = 85
-                  ) %>% addProviderTiles(providers$CartoDB.Positron) %>% addMarkers(
-                    data = filtered(),
-                    lat = ~ Latitude,
-                    lng = ~ Longitude,
-                    label = ~ Restaurant_name,
-                    popup = ~ paste(
-                      "<strong>",
-                      Restaurant_name,
-                      "</strong>",
-                      "<br>",
-                      "Cuisine: ",
-                      Cuisine_Type,
-                      "<br>",
-                      "Awarded year: ",
-                      Awarded_since,
-                      "<br>",
-                      "Chef: ",
-                      Chef,
-                      "<br>",
-                      "Specialty: ",
-                      Specialty,
-                      "<br>"
-                    ),
-                    
-                  ) %>% addPolygons(
-                    stroke = TRUE,
-                    weight = 1,              #stroke
-                    color = "black",         #stroke
-                    smoothFactor = 0.2,
-                    fillColor = "green",
-                    fillOpacity = 0.1,
-                    highlight = highlightOptions(
-                      stroke = TRUE,
-                      weight = 1,              #stroke
-                      color = "black",         #stroke
-                      fillOpacity = 1,
-                      bringToFront = TRUE
-                    ),
-                    label =  ~ name,
-                    layerId = ~ name
-                    
-                  ) %>% addLegend(
-                    "bottomright", 
-                    pal = legend, 
-                    values = ~mcl_countries,
-                    title = "<small>Number of Michelin Restaurants</small>"
-                  ) 
+                  ) %>% addProviderTiles(providers$CartoDB.Positron) %>%
+      addMarkers(
+        data = filtered(),
+        lat = ~ Latitude,
+        lng = ~ Longitude,
+        label = ~ Restaurant_name,
+        labelOptions = labelOptions(
+          direction = "top",
+          style = list(
+            "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
+            "font-size" = "14px",
+            "font-style" = "italic",
+            "border-color" = "rgba(0,0,0,0.5)"
+          )
+        ),
+        icon = bluePinIcon,
+        popup = ~ paste(
+          "<h4 style='color:green'>",
+          Restaurant_name,
+          "</h4>",
+          "<b>",
+          "Cuisine: ",
+          "</b>",
+          Cuisine_Type,
+          "<br>",
+          "<b>",
+          "Awarded year: ",
+          "</b>",
+          Awarded_since,
+          "<br>",
+          "<b>",
+          "Chef: ",
+          "</b>",
+          Chef,
+          "<br>",
+          "<b>",
+          "Specialty: ",
+          "</b>",
+          Specialty,
+          "<br>"
+        ),
+        
+      ) %>% addPolygons(
+        stroke = TRUE,
+        weight = 1,
+        #stroke
+        color = "black",
+        #stroke
+        smoothFactor = 0.2,
+        fillColor = "green",
+        fillOpacity = 0.1,
+        highlight = highlightOptions(
+          stroke = TRUE,
+          weight = 1,
+          #stroke
+          color = "black",
+          #stroke
+          fillOpacity = 1,
+          bringToFront = TRUE
+        ),
+        label =  ~ name,
+        labelOptions = labelOptions(
+          direction = "top",
+          style = list(
+            "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
+            "font-size" = "14px",
+            "border-color" = "rgba(0,0,0,0.5)"
+          )
+        ),
+        layerId = ~ name
+        
+      ) %>% addLegend(
+        "bottomright",
+        pal = legend,
+        values = ~ mcl_countries,
+        title = "<small>Number of Michelin Restaurants</small>"
+      )
     
-                    
+    
   })
   observe({
     click = input$mymap_shape_click
@@ -141,7 +180,7 @@ server <- function(input, output) {
       setView(lng = lng ,
               lat = lat,
               zoom = 4)
-
+    
   })
   
   
