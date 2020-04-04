@@ -11,18 +11,20 @@ ui <- fluidPage(titlePanel("3 star Michelin restaurant"),
                     2,
                     
                     #Price selector
-                    sliderInput("priceInput", "Price", 0, 500, c(25, 400), pre = "$"),
+                    sliderInput("priceInput", "Price", 17, 500, c(17, 500), pre = "$"),
                     
+                    #Comfort level selector
+                    sliderInput("comfortInput", "Comfort level", 1, 5, c(1, 5), pre = ""),
+                    
+                    #Cuisine selector
                     uiOutput("cuisineOutput"),
-                    
                     
                     
                     #Preference selector
                     checkboxInput("vegetarianInput", "Vegetarian", FALSE),
-                    checkboxInput("outdoorInput", "Outdoor dining", FALSE),
+                    checkboxInput("outdoorInput", "Outdoor dining", FALSE)
                     
-                    #Comfort level selector
-                    sliderInput("comfortInput", "Comfort level", 1, 5, c(1, 5), pre = "")
+                    
                   ),
                   
                   
