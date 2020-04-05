@@ -9,9 +9,7 @@ ui <- fluidPage(titlePanel("3 star Michelin restaurant"),
                 fluidRow(
                   column(
                     2,
-                    tags$style(HTML(".js-irs-0 .irs-single, .js-irs-0 .irs-bar-edge, .js-irs-0 .irs-bar {background: #9A1F33;border-top: 1px solid #9A1F33;border-bottom: 1px solid #9A1F33;} .irs-from, .irs-to, .irs-single { background: #9A1F33 }")),
-                    tags$style(HTML(".js-irs-1 .irs-single, .js-irs-1 .irs-bar-edge, .js-irs-1 .irs-bar {background: #9A1F33;border-top: 1px solid #9A1F33;border-bottom: 1px solid #9A1F33;} .irs-from, .irs-to, .irs-single { background: #9A1F33 }")),
-
+                    
                     #Price selector
                     sliderInput("priceInput", "Price", 17, 500, c(17, 500), pre = "$"),
                     
@@ -23,11 +21,18 @@ ui <- fluidPage(titlePanel("3 star Michelin restaurant"),
                     
                     
                     #Preference selector
-                    checkboxInput("vegetarianInput", p("Vegetarian",style="font-weight:bold"), FALSE),
-                    checkboxInput("outdoorInput", p("Outdoor Dining",style="font-weight:bold"), FALSE)
+                    checkboxInput("vegetarianInput", "Vegetarian", FALSE),
+                    checkboxInput("outdoorInput", "Outdoor dining", FALSE),
                     
                     
+                    fixedRow( style = "background-color:#f0dcdf;", 
+                              plotOutput("Country", 
+                                         width = "100%", 
+                                         height = "600px",
+                                        ),
+                    )
                   ),
+                 
                   
                   
                   column(8,
@@ -35,8 +40,8 @@ ui <- fluidPage(titlePanel("3 star Michelin restaurant"),
                          #tableOutput("results")
                          ),
                          
-                  column(2,p("Restaurant List",style = "font-weight: bold;"),
-                         div(style = "overflow-y: auto; height:300px; background-color:#f0dcdf;", uiOutput("restaurantOutput")),
-                         
+                  column(2,
+                         sliderInput("comfosrtInput", "Placeholder for restaurant list", 1, 5, c(1, 5), pre = ""),
+                         div(style = "overflow-y: auto; height:300px; background-color:#f0dcdf;", uiOutput("restaurantOutput"))
                 )),
                 )

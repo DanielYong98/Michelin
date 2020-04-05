@@ -42,6 +42,16 @@ server <- function(input, output) {
     )
   })
   
+  output$restaurantOutput <-renderUI({
+    x <- paste0(filtered()$Restaurant_name,sep="<br>")
+    HTML(x)
+  })
+  
+  output$Country <-renderPlot({
+    temp = as.data.frame(table(mcl$Country))
+    ggplot(temp, aes(x = reorder(Var1, Freq) , y = Freq, main="Michelin 3-Starred Restaurants")) + geom_bar(stat = "identity") + coord_flip() + labs(y = "No. of Michelin 3-starred Restaurant") + theme(axis.title.y = element_blank()) 
+  })
+  
   filtered <- reactive({
     mcl %>%
       filter(
@@ -60,11 +70,6 @@ server <- function(input, output) {
         Comfortable_Level <= input$comfortInput[2],
       )
   })
-
-  output$restaurantOutput <-renderUI({
-    x <- paste0(filtered()$Restaurant_name,sep="<br>")
-    HTML(x)
-    })
   
   bluePinIcon <- makeIcon(
     iconUrl = "blue-pin.png",
