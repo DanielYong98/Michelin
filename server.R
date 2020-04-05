@@ -32,7 +32,7 @@ server <- function(input, output) {
   output$cuisineOutput <- renderUI({
     pickerInput(
       "cuisineInput",
-      label = "Select cuisine",
+      label = p("Cuisine Type:",style="font-weight:bold"),
       choices = c(sort(unique(
         mcl$Cuisine_Type
       ))),
@@ -60,6 +60,11 @@ server <- function(input, output) {
         Comfortable_Level <= input$comfortInput[2],
       )
   })
+
+  output$restaurantOutput <-renderUI({
+    x <- paste0(filtered()$Restaurant_name,sep="<br>")
+    HTML(x)
+    })
   
   bluePinIcon <- makeIcon(
     iconUrl = "blue-pin.png",
@@ -104,7 +109,7 @@ server <- function(input, output) {
         ),
         icon = bluePinIcon,
         popup = ~ paste(
-          "<h4 style='color:green'>",
+          "<h4 style='color:#9A1F33'>",
           Restaurant_name,
           "</h4>",
           "<b>",
@@ -136,7 +141,7 @@ server <- function(input, output) {
         color = "black",
         #stroke
         smoothFactor = 0.2,
-        fillColor = "green",
+        fillColor = "#9A1F33",
         fillOpacity = 0.1,
         highlight = highlightOptions(
           stroke = TRUE,
