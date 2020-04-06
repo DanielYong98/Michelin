@@ -5,6 +5,8 @@ library(shinyWidgets)
 library(leaflet)
 library(rgdal)
 library(geojsonio)
+library(plyr)
+
 #C:/Users/DAN/Desktop/IVP proj/CW2/RStudio/Michelin
 #setwd("C:/Users/DAN/Desktop/IVP proj/CW2/RStudio/Michelin/Michelin")
 mcl <- read.csv("michelin3star.csv", stringsAsFactors = FALSE)
@@ -48,8 +50,8 @@ server <- function(input, output) {
   })
   
   output$Country <-renderPlot({
-    temp = as.data.frame(table(mcl$Country))
-    ggplot(temp, aes(x = reorder(Var1, Freq) , y = Freq, main="Michelin 3-Starred Restaurants")) + geom_bar(stat = "identity") + coord_flip() + labs(y = "No. of Michelin 3-starred Restaurant") + theme(axis.title.y = element_blank()) 
+    temp = as.data.frame(table(filtered()$Country))
+    ggplot(temp, aes(x = reorder(Var1, Freq),y = Freq, main="Michelin 3-Starred Restaurants")) + geom_bar(stat = "identity",fill="#9A1F33") + coord_flip() + labs(y = "No. of restaurants") + theme(axis.title.y = element_blank()) 
   })
   
   filtered <- reactive({
@@ -70,6 +72,14 @@ server <- function(input, output) {
         Comfortable_Level <= input$comfortInput[2],
       )
   })
+
+  output$resOutput <-renderPlot({
+    data <- data.frame(x=filtered()$Price_Upper,y=filtered()$Country)
+    ggplot(data, aes(x=x, y=y)) + 
+    geom_point(size=3,color="#9A1F33") +
+    theme(axis.title.y = element_blank()) +
+    labs(x = "Average Price")
+  },width=300)
   
   bluePinIcon <- makeIcon(
     iconUrl = "blue-pin.png",
