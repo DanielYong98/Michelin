@@ -30,20 +30,18 @@ ui <- fluidPage(titlePanel("3 star Michelin restaurant"),
                     fixedRow( style = "background-color:#f0dcdf;", 
                               plotOutput("Country", 
                                          width = "100%", 
-                                         height = "600px"
+                                         height = "400px",
                                         ),
                     )
                   ),
                  
-                  
-                  
                   column(8,
                          leafletOutput(outputId = "mymap",height="900"),
                          #tableOutput("results")
                          ),
                          
-                  column(2,
-                         sliderInput("comfosrtInput", "Placeholder for restaurant list", 1, 5, c(1, 5), pre = ""),
-                         div(style = "overflow-y: auto; height:300px; background-color:#f0dcdf;", uiOutput("restaurantOutput"))
+                  column(2,p("Restaurant List",style = "font-weight: bold;"),
+                         div(style = "overflow-y: auto; height:300px; background-color:#f0dcdf;", uiOutput("restaurantOutput")),
+                         fixedRow(style = "", plotOutput("resOutput",width = "100%", height="450px")),
                 )),
                 )
