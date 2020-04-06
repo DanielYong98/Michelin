@@ -9,6 +9,8 @@ ui <- fluidPage(titlePanel("3 star Michelin restaurant"),
                 fluidRow(
                   column(
                     2,
+                    tags$style(HTML(".js-irs-0 .irs-single, .js-irs-0 .irs-bar-edge, .js-irs-0 .irs-bar {background: #9A1F33;border-top: 1px solid #9A1F33;border-bottom: 1px solid #9A1F33;} .irs-from, .irs-to, .irs-single { background: #9A1F33 }")),
+                    tags$style(HTML(".js-irs-1 .irs-single, .js-irs-1 .irs-bar-edge, .js-irs-1 .irs-bar {background: #9A1F33;border-top: 1px solid #9A1F33;border-bottom: 1px solid #9A1F33;} .irs-from, .irs-to, .irs-single { background: #9A1F33 }")),
                     
                     #Price selector
                     sliderInput("priceInput", "Price", 17, 500, c(17, 500), pre = "$"),
@@ -21,8 +23,8 @@ ui <- fluidPage(titlePanel("3 star Michelin restaurant"),
                     
                     
                     #Preference selector
-                    checkboxInput("vegetarianInput", "Vegetarian", FALSE),
-                    checkboxInput("outdoorInput", "Outdoor dining", FALSE),
+                    checkboxInput("vegetarianInput", p("Vegetarian",style="font-weight:bold"), FALSE),
+                    checkboxInput("outdoorInput", p("Outdoor Dining",style="font-weight:bold"), FALSE),
                     
                     
                     fixedRow( style = "background-color:#f0dcdf;", 
