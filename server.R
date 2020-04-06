@@ -6,7 +6,7 @@ library(leaflet)
 library(rgdal)
 library(geojsonio)
 
-library(plotly)
+# library(plotly)
 
 library(plyr)
 
@@ -53,11 +53,11 @@ server <- function(input, output) {
     HTML(x)
   })
   
-
+  
   output$Country <-renderPlot({
     temp = as.data.frame(table(filtered()$Country))
     ggplot(temp, aes(x = reorder(Var1, Freq),y = Freq, main="Michelin 3-Starred Restaurants")) + geom_bar(stat = "identity",fill="#9A1F33") + coord_flip() + labs(y = "No. of restaurants") + theme(axis.title.y = element_blank()) 
-
+    
   })
   
   filtered <- reactive({
@@ -78,13 +78,16 @@ server <- function(input, output) {
         Comfortable_Level <= input$comfortInput[2],
       )
   })
-
+  
+  ranges <- reactiveValues(x = NULL, y = NULL)
+  
   output$resOutput <-renderPlot({
-    data <- data.frame(x=filtered()$Price_Upper,y=filtered()$Country)
-    ggplot(data, aes(x=x, y=y)) + 
-    geom_point(size=3,color="#9A1F33") +
-    theme(axis.title.y = element_blank()) +
-    labs(x = "Average Price")
+    data <- data.frame(x=(filtered()$Price_Lower + filtered()$Price_Upper) / 2, y=filtered()$Country)
+    ggplot(data, aes(x= x, y= y)) + 
+      geom_point(size=3,color="#9A1F33") +
+      coord_cartesian(xlim = ranges$x, ylim = ranges$y, expand = TRUE) +
+      theme(axis.title.y = element_blank()) +
+      labs(x = "Average Price")
   },width=300)
   
   bluePinIcon <- makeIcon(
@@ -209,6 +212,19 @@ server <- function(input, output) {
     
   })
   
+  # When a double-click happens, check if there's a brush on the plot.
+  # If so, zoom to the brush bounds; if not, reset the zoom.
+  observeEvent(input$plot1_dblclick, {
+    brush <- input$plot1_brush
+    if (!is.null(brush)) {
+      ranges$x <- c(brush$xmin, brush$xmax)
+      ranges$y <- c(brush$ymin, brush$ymax)
+      
+    } else {
+      ranges$x <- NULL
+      ranges$y <- NULL
+    }
+  })
   
   
   # #table/list
