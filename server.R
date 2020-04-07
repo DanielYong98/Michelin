@@ -8,7 +8,7 @@ library(geojsonio)
 
 # library(plotly)
 
-library(plyr)
+# library(plyr)
 
 
 #C:/Users/DAN/Desktop/IVP proj/CW2/RStudio/Michelin
@@ -56,7 +56,12 @@ server <- function(input, output) {
   
   output$Country <-renderPlot({
     temp = as.data.frame(table(filtered()$Country))
-    ggplot(temp, aes(x = reorder(Var1, Freq),y = Freq, main="Michelin 3-Starred Restaurants")) + geom_bar(stat = "identity",fill="#9A1F33") + coord_flip() + labs(y = "No. of restaurants") + theme(axis.title.y = element_blank()) 
+    ggplot(temp, aes(x = reorder(Var1, Freq),y = Freq, main="Michelin 3-Starred Restaurants")) + 
+      geom_bar(stat = "identity",fill="#9A1F33") + 
+      geom_text(aes(label = Freq, Freq = Freq + 10), size = 10) + 
+      coord_flip() + 
+      labs(y = "No. of restaurants") + 
+      theme(axis.title.y = element_blank()) 
     
   })
   
@@ -82,13 +87,13 @@ server <- function(input, output) {
   ranges <- reactiveValues(x = NULL, y = NULL)
   
   output$resOutput <-renderPlot({
-    data <- data.frame(x=(filtered()$Price_Lower + filtered()$Price_Upper) / 2, y=filtered()$Country)
-    ggplot(data, aes(x= x, y= y)) + 
-      geom_point(size=3,color="#9A1F33") +
-      coord_cartesian(xlim = ranges$x, ylim = ranges$y, expand = TRUE) +
-      theme(axis.title.y = element_blank()) +
-      labs(x = "Average Price")
-  },width=300)
+    res <- data.frame(x=(filtered()$Price_Lower + filtered()$Price_Upper) / 2, y=filtered()$Country)
+    ggplot(res, aes(x= x, y= y)) + 
+        geom_point(size=3,color="#9A1F33") +
+        coord_cartesian(xlim = ranges$x, ylim = ranges$y, expand = TRUE) +
+        theme(axis.title.y = element_blank()) +
+        labs(x = "Average Price")
+    },width=300)
   
   bluePinIcon <- makeIcon(
     iconUrl = "star1.png",
@@ -196,26 +201,69 @@ server <- function(input, output) {
     
     
   })
+  
   observe({
     click = input$mymap_shape_click
     #  subset the spdf object to get the lat, lng and country name of the selected shape (Country in this case)
     sub = myspdf[myspdf$NAME == click$id, c("LAT", "LON", "NAME")]
     lat = sub$LAT
     lng = sub$LON
+    temp = sub$NAME[1] == "Norway"
     if (is.null(click))
       return()
+    
+    if (temp)
+      leafletProxy("mymap") %>%
+      setView(lng = lng,
+              lat = lat,
+              zoom = 2)
     else
       leafletProxy("mymap") %>%
-      setView(lng = lng ,
+      setView(lng = lng,
               lat = lat,
               zoom = 4)
     
   })
+  # 
+  # selected_points <- reactiveVal()
+  # 
+  # observeEvent(input$plot2_click,{
+  #   res <- data.frame(y = filtered()$Country, z = filtered()$Restaurant_name, x=(filtered()$Price_Lower + filtered()$Price_Upper) / 2)
+  #   
+  #   
+  #   selected_points(nearPoints(res, input$plot2_click))
+  # })
+  # 
+  # # show a modal dialog
+  # observeEvent(selected_points(), ignoreInit=T,ignoreNULL = T, {
+  #   if(nrow(selected_points())>0){
+  #     showModal(modalDialog(
+  #       title = "Important message",
+  #       paste0("You have selected: ",paste0(rownames(selected_points()),collapse=', ')),
+  #       easyClose = TRUE
+  #     ))
+  #   }
+  # })
+  
+
+  output$dynamic <- renderUI({
+    req(input$plot2_click)
+    verbatimTextOutput("vals")
+  })
+
+  output$vals <- renderPrint({
+    click <- input$plot2_click
+    # print(str(hover)) # list
+    res <- data.frame(y = filtered()$Country, z = filtered()$Restaurant_name, x=(filtered()$Price_Lower + filtered()$Price_Upper) / 2)
+    y <- nearPoints(res, input$plot2_click)
+    req(nrow(y) != 0)
+    y
+  })
   
   # When a double-click happens, check if there's a brush on the plot.
   # If so, zoom to the brush bounds; if not, reset the zoom.
-  observeEvent(input$plot1_dblclick, {
-    brush <- input$plot1_brush
+  observeEvent(input$plot2_dblclick, {
+    brush <- input$plot2_brush
     if (!is.null(brush)) {
       ranges$x <- c(brush$xmin, brush$xmax)
       ranges$y <- c(brush$ymin, brush$ymax)

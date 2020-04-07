@@ -43,10 +43,10 @@ ui <- fluidPage(titlePanel("3 star Michelin restaurant"),
                   
                   column(2,p("Restaurant List",style = "font-weight: bold;"),
                          div(style = "overflow-y: auto; height:300px; background-color:#f0dcdf;", uiOutput("restaurantOutput")),
-                         fixedRow(style = "position: fixed; bottom: 100px", plotOutput("resOutput",width = "100%", height="450px", dblclick = "plot1_dblclick",
-                                                         brush = brushOpts(
-                                                           id = "plot1_brush",
-                                                           resetOnNew = TRUE
-                                                         ))),
+                         fixedRow(style = "position: fixed; bottom: 100px", plotOutput("resOutput",width = "100%", height="450px", dblclick = "plot2_dblclick",
+                                                         brush = brushOpts(id = "plot2_brush", resetOnNew = TRUE), 
+                                                         click = "plot2_click"), uiOutput("dynamic")
+                                  ),
+                         
                   )),
 )
