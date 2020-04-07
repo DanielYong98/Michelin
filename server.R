@@ -5,9 +5,7 @@ library(shinyWidgets)
 library(leaflet)
 library(rgdal)
 library(geojsonio)
-
 library(plotly)
-
 library(plyr)
 
 
@@ -31,7 +29,7 @@ if (all(mcl_countries %in% worldcountry$id) == FALSE) {
 
 # create plotting parameters for map
 bins = c(1, 10, 20, 30)
-legend <- colorBin("green", domain = mcl_countries, bins = bins)
+legend <- colorBin("green", domain = mcl$countries, bins = bins)
 plot_map = worldcountry[worldcountry$id %in% mcl_countries, ]
 
 server <- function(input, output) {
@@ -54,7 +52,7 @@ server <- function(input, output) {
   })
   
 
-  output$Country <-renderPlot({
+  output$Country <-renderPlotly({
     temp = as.data.frame(table(filtered()$Country))
     ggplot(temp, aes(x = reorder(Var1, Freq),y = Freq, main="Michelin 3-Starred Restaurants")) + geom_bar(stat = "identity",fill="#9A1F33") + coord_flip() + labs(y = "No. of restaurants") + theme(axis.title.y = element_blank()) 
 
@@ -87,12 +85,13 @@ server <- function(input, output) {
     labs(x = "Average Price")
   },width=300)
   
-  bluePinIcon <- makeIcon(
+  #custom marker
+  starIcon <- makeIcon(
     iconUrl = "star1.png",
     iconWidth = 20,
     iconHeight = 20,
-    iconAnchorX = 15,
-    iconAnchorY = 30
+    iconAnchorX = 0,
+    iconAnchorY = 10
   )
   
   #map function
@@ -103,8 +102,8 @@ server <- function(input, output) {
         zoomControl = FALSE,
         dragging = TRUE,
         zoomSnap = .55,
-        minZoom = 2.3,
-        maxZoom = 10
+        minZoom = 2.3
+        #maxZoom = 10
       )
     ) %>% setView(lng = 10,
                   lat = 42,
@@ -128,7 +127,7 @@ server <- function(input, output) {
             "border-color" = "rgba(0,0,0,0.5)"
           )
         ),
-        icon = bluePinIcon,
+        icon = starIcon,
         popup = ~ paste(
           "<h4 style='color:#9A1F33'>",
           Restaurant_name,
@@ -173,6 +172,7 @@ server <- function(input, output) {
           fillOpacity = 1,
           bringToFront = TRUE
         ),
+        
         label =  ~ name,
         labelOptions = labelOptions(
           direction = "top",

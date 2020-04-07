@@ -4,6 +4,8 @@ library(dplyr)
 library(shinyWidgets)
 library(leaflet)
 library(rgdal)
+library(plotly)
+library(plyr)
 
 ui <- fluidPage(titlePanel("3 star Michelin restaurant"),
                 fluidRow(
@@ -13,7 +15,7 @@ ui <- fluidPage(titlePanel("3 star Michelin restaurant"),
                     tags$style(HTML(".js-irs-1 .irs-single, .js-irs-1 .irs-bar-edge, .js-irs-1 .irs-bar {background: #9A1F33;border-top: 1px solid #9A1F33;border-bottom: 1px solid #9A1F33;} .irs-from, .irs-to, .irs-single { background: #9A1F33 }")),
                     
                     #Price selector
-                    sliderInput("priceInput", "Price", 17, 1000, c(17, 500), pre = "$"),
+                    sliderInput("priceInput", "Price", 17, 900, c(17, 900), pre = "$"),
                     
                     #Comfort level selector
                     sliderInput("comfortInput", "Comfort level", 1, 5, c(1, 5), pre = ""),
@@ -28,7 +30,7 @@ ui <- fluidPage(titlePanel("3 star Michelin restaurant"),
                     
                     
                     fixedRow( style = "background-color:#f0dcdf;", 
-                              plotOutput("Country", 
+                              plotlyOutput("Country", 
                                          width = "100%", 
                                          height = "400px",
                                         ),
