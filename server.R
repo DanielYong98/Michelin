@@ -5,10 +5,6 @@ library(shinyWidgets)
 library(leaflet)
 library(rgdal)
 library(geojsonio)
-# library(plotly)
-
-# library(plyr)
-
 
 #C:/Users/DAN/Desktop/IVP proj/CW2/RStudio/Michelin
 #setwd("C:/Users/DAN/Desktop/IVP proj/CW2/RStudio/Michelin/Michelin")
