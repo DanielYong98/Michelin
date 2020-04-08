@@ -7,7 +7,7 @@ library(rgdal)
 library(plotly)
 library(plyr)
 
-ui <- fluidPage(titlePanel("3 star Michelin restaurant"),
+ui <- fluidPage(titlePanel(h1("3-Starred Michelin Restaurants", align = "center")),
                 fluidRow(
                   column(
                     2,
@@ -30,23 +30,22 @@ ui <- fluidPage(titlePanel("3 star Michelin restaurant"),
                     
                     
 
-                    fixedRow( style = "position: relative; top: 50px", 
+                    div( style = "position: relative; top: 50px;height:420px;position:absolute; top:370px;width:100%;left:5px;", 
                               plotOutput("Country", 
-                                         width = "100%", 
-                                         height = "450px",
+                                         width = "100%"
                               ),
                     )
                     
                   ),
                   
                   column(8,
-                         leafletOutput(outputId = "mymap",height="900"),
+                         leafletOutput(outputId = "mymap",height="800"),
                          #tableOutput("results")
                   ),
                   
                   column(2,p("Restaurant List",style = "font-weight: bold;"),
-                         div(style = "overflow-y: auto; height:300px; background-color:#f0dcdf;", uiOutput("restaurantOutput")),
-                         fixedRow(style = "position: fixed; bottom: 100px", plotOutput("resOutput",width = "100%", height="450px", dblclick = "plot2_dblclick",
+                         div(style = "overflow-y: auto; height:300px; background-color:#f0dcdf;position:relative; top:0px;left:0;", uiOutput("restaurantOutput")),
+                         div(style = "overflow-x: auto;height:500px; width:100%;position:absolute; top:350px;right:15px;", plotOutput("resOutput",width = "100%", dblclick = "plot2_dblclick",
                                                          brush = brushOpts(id = "plot2_brush", resetOnNew = TRUE), 
                                                          click = "plot2_click"), uiOutput("dynamic")
                                   ),

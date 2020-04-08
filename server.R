@@ -63,7 +63,7 @@ server <- function(input, output) {
              main = "Michelin 3-Starred Restaurants"
            )) +
       geom_bar(stat = "identity", fill = "#9A1F33") +
-      geom_text(aes(label = Freq, Freq = Freq + 10), size = 10) +
+      geom_text(aes(label = Freq, Freq = Freq + 10), size = 7,color = "#e7c600") +
       coord_flip() +
       labs(y = "No. of restaurants") +
       theme(axis.title.y = element_blank())
@@ -104,7 +104,7 @@ server <- function(input, output) {
                       expand = TRUE) +
       theme(axis.title.y = element_blank()) +
       labs(x = "Average Price")
-  }, width = 300)
+  })
   
   #custom marker
   starIcon <- makeIcon(
