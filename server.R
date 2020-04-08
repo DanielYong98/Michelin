@@ -27,7 +27,7 @@ if (all(mcl_countries %in% worldcountry$id) == FALSE) {
 # create plotting parameters for map
 bins = c(1, 10, 20, 30)
 legend <- colorBin("green", domain = mcl$countries, bins = bins)
-plot_map = worldcountry[worldcountry$id %in% mcl_countries,]
+plot_map = worldcountry[worldcountry$id %in% mcl_countries, ]
 
 server <- function(input, output) {
   output$cuisineOutput <- renderUI({
@@ -59,7 +59,9 @@ server <- function(input, output) {
              main = "Michelin 3-Starred Restaurants"
            )) +
       geom_bar(stat = "identity", fill = "#9A1F33") +
-      geom_text(aes(label = Freq, Freq = Freq + 10), size = 7,color = "#e7c600") +
+      geom_text(aes(label = Freq, Freq = Freq + 10),
+                size = 7,
+                color = "#e7c600") +
       coord_flip() +
       labs(y = "No. of restaurants") +
       theme(axis.title.y = element_blank())
@@ -206,8 +208,11 @@ server <- function(input, output) {
         pal = legend,
         values = ~ mcl_countries,
         title = "<small>Number of Michelin Restaurants</small>"
-      )
-    
+      ) %>% addEasyButton(easyButton(
+        icon = "fa-globe",
+        title = "Zoom to Default",
+        onClick = JS("function(btn, map){ map.setZoom(1);map.setView([42, 10], 0); }")
+      ))
     
   })
   
@@ -224,17 +229,13 @@ server <- function(input, output) {
         "Norway",
         "United Kingdom",
         "Germany",
-        "Belgium",
-        "Netherlands",
-        "Denmark",
         "France",
-        "Switzerland",
         "Italy",
-        "Austria",
         "Spain",
         "South Korea"
       )
     zoom4.5 <- c("China")
+    zoom6.5 <- c("Netherlands", "Belgium", "Denmark", "Switzerland","Austria")
     zoom7 <- c("Taiwan")
     zoom5 <- c("Sweden")
     if (sub$NAME[1] %in% zoom5.5) {
@@ -248,6 +249,8 @@ server <- function(input, output) {
     }
     else if (sub$NAME[1] %in% zoom5) {
       temp = 5
+    } else if (sub$NAME[1] %in% zoom6.5) {
+      temp = 6.5
     }
     
     

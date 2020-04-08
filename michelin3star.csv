@@ -1,261 +1,261 @@
 Restaurant_name,Location,Country_ID,Country,Latitude,Longitude,Awarded_since,Chef,Price_Range,Price_Lower,Price_Upper,Cuisine_Type,Comfortable_Level,Vegetarian,Outdoor_Dining,Specialty
-Azabu Yukimura,"3F, Yuken Azabu.10, 1-5-5 Azabujuban, Minato-ku, Tokyo",JPN,Japan,35.657332,139.732921,2010,Jun Yukimura,297-378,297.00,378.00,Japanese,2,0,0,
-Yamazaki,"1-18-9 Nunomachiminami, Toyama",JPN,Japan,36.6748758,137.2009615,2016,Koji Yamazaki,39-153,39.00,153.00,Japanese,3,0,0,
-Taian,"1F, Yamamotomatsu Bldg, 1-21-2 Shimanouchi, Chuo-ku, Osaka",JPN,Japan,34.673377,135.507258,2011,Hitoshi Takahata,180,180.00,180.00,Japanese,2,0,0,
-Sushi Yoshitake,"9F Brown Place, 7-8-13 Ginza, Chuo-ku, Tokyo",JPN,Japan,35.668908,139.76192,2012,Masahiro Yoshitake,342,342.00,342.00,Sushi,2,0,0,
-Ueda,"2-20 Yahatahontori, Nakagawa-Ku, Nagoya",JPN,Japan,35.146705,136.880583,2019,Naoki Ueda,99-198,99.00,198.00,Sushi,1,0,0,
-Sushi Sakai,"2F, LANE Round Bldg, 3-20 Nishinakasu, Chuo-ku, Fukuoka",JPN,Japan,33.590837,130.405567,2014,Daigo Sakai,270-297,270.00,297.00,Sushi,2,0,0,
-Sushi Komada,"2 Chome-14-18 Kawasaki, Ise, Mie 516-0009, Japan",JPN,Japan,34.494619,136.715224,2019,Kenri Komada,180,180.00,180.00,Sushi,2,0,0,
-Sushi Gyoten,"1-2-12 Hirao, Chuo-ku, Fukuoka",JPN,Japan,33.580324,130.401163,2014,Kenji Gyoten,225-261,225.00,261.00,Sushi,1,0,0,
-Ryugin,"7F, Tokyo Midtown Hibiya, 1-1-2 Yurakucho, Chiyoda-ku, Tokyo",JPN,Japan,35.674066,139.759054,2012,Seiji Yamamoto,441,441.00,441.00,Japanese,4,0,0,
-Quintessence,"1F, Garden City Shinagawa Gotenyama, 6-7-29 Kitashinagawa, Shinagawa-ku, Tokyo",JPN,Japan,35.623996,139.73309,2008,Shuzo Kishida,270,270.00,270.00,French,3,0,0,
-Nakashima,"10-4 Higashihakushimacho, Naka-ku, Hiroshima",JPN,Japan,34.405611,132.464998,2013,Tetsuo Nakashima,97-146,97.00,146.00,Japanese,2,0,0,
-Isshisoden Nakamura,"136 Matsushitacho, Nakagyo-ku, Kyoto",JPN,Japan,35.01037,135.765062,2011,Motokazu Nakamura,171-342,171.00,342.00,Japanese,3,0,0,
-Mizai,"613 Maruyamacho, Higashiyama-ku, Kyoto",JPN,Japan,35.002976,135.782354,2014 & 2010–12,Hitoshi Ishihara,450,450.00,450.00,Japanese,2,0,0,
-Makimura,"3-11-5 Minamioi, Shinagawa-ku, Tokyo",JPN,Japan,35.590846,139.735425,2015,Makimura Akio,225,225.00,225.00,Japanese,2,0,0,
-Maeda,"570-118 Giommachi-minamigawa, Higashiyama-ku, Kyoto",JPN,Japan,35.001582,135.77416,2020,Yujiro Maeda,270,270.00,270.00,Japanese,2,0,0,
-L'Osier,"7-5-5 Ginza, Chuo-ku, Tokyo",JPN,Japan,35.66966,139.761245,2019 & 2008–10,Olivier Chaignon,117-396,117.00,396.00,French,4,0,0,
-Kohaku,"3-4 Kagurazaka, Shinjuku-ku, Tokyo",JPN,Japan,35.70074,139.740981,2016,Koji Koizumi,297,297.00,297.00,Japanese,2,0,0,
-Kitcho Arashiyama Honten,"58 Sagatenryuji-susukinobabacho, Ukyo-ku, Kyoto",JPN,Japan,35.013642,135.674658,2010,Kunio Tokuoka,477-899,477.00,899.00,Japanese,5,0,0,
-Kikunoi Honten,"459 Shimokawaracho, Higashiyama-ku, Kyoto",JPN,Japan,35.001483,135.782056,2010,Yoshihiro Murata,153-576,153.00,576.00,Japanese,5,0,0,
-Kashiwaya,"2-5-18 Senriyamanishi, Suita",JPN,Japan,34.770323,135.501166,2011,Hideaki Matsuo,117-333,117.00,333.00,Japanese,3,0,0,
-Kanda,"3-6-34 Motoazabu, Minato-ku, Tokyo",JPN,Japan,35.657048,139.728715,2008,Hiroyuki Kanda,333,333.00,333.00,Japanese,2,0,0,
-Kadowaki,"2-7-2, Azabujuban, Minato-ku, Tokyo",JPN,Japan,35.655946,139.73361,2020,Toshiya Kadowaki,225-540,225.00,540.00,Japanese,2,0,0,
-Joël Robuchon,"Yebisu Garden Place, 1-13-1 Mita, Meguro-ku, Tokyo",JPN,Japan,35.641934,139.714582,2008,Michael Michaelidis,189-468,189.00,468.00,French,5,0,0,
-Kagurazaka Ishikawa,"5-37 Kagurazaka, Shinjuku-ku, Tokyo",JPN,Japan,35.701212,139.739443,2009,Hideki Ishikawa,324-441,324.00,441.00,Japanese,2,0,0,
-Iida,"120-1 Fukunagacho, Nakagyo-ku, Kyoto",JPN,Japan,35.009802,135.764793,2018,Shinichi Iida,306-495,306.00,495.00,Japanese,2,0,0,
-Hyotei,"35 Nanzenji-kusagawacho, Sakyo-ku, Kyoto",JPN,Japan,35.011424,135.786737,2010,Yoshihiro Takahashi,234-405,234.00,405.00,Japanese,3,0,0,
-Hijikata,"3-11-26 Marunochi, Naka-Ku, Nagoya",JPN,Japan,35.176205,136.902869,2019,Shoji Hijikata,162-198,162.00,198.00,Japanese,2,0,0,
-Hajime,"1F, i Place 1-9-11 Edobori, Nishi-ku, Osaka",JPN,Japan,34.688721,135.496058,2018 & 2010–12,Hajime Yoneda,351-477,351.00,477.00,Innovative,3,0,0,
-Gion Sasaki,"566-27 Komatsucho, Higashiyama-ku, Kyoto",JPN,Japan,34.998911,135.774996,2020,Hiroshi Sasaki,72-261,72.00,261.00,Japanese,2,0,0,
-Le Clos des Sens,"13 rue Jean-Mermoz - à Annecy-le-Vieux, Annecy, 74940, France",FRA,France,45.917819,6.144412,2019,Laurent Petit,138-227,138.00,227.00,Creative,3,1,1,". L'écrevisse du lac d'Annecy et l'envolée de champignons
+Azabu Yukimura,"3F, Yuken Azabu.10, 1-5-5 Azabujuban, Minato-ku, Tokyo",JPN,Japan,35.657332,139.732921,2010,Jun Yukimura,297-378,297,378,Japanese,2,0,0,Not available
+Yamazaki,"1-18-9 Nunomachiminami, Toyama",JPN,Japan,36.6748758,137.2009615,2016,Koji Yamazaki,39-153,39,153,Japanese,3,0,0,Not available
+Taian,"1F, Yamamotomatsu Bldg, 1-21-2 Shimanouchi, Chuo-ku, Osaka",JPN,Japan,34.673377,135.507258,2011,Hitoshi Takahata,180,180,180,Japanese,2,0,0,Not available
+Sushi Yoshitake,"9F Brown Place, 7-8-13 Ginza, Chuo-ku, Tokyo",JPN,Japan,35.668908,139.76192,2012,Masahiro Yoshitake,342,342,342,Sushi,2,0,0,Not available
+Ueda,"2-20 Yahatahontori, Nakagawa-Ku, Nagoya",JPN,Japan,35.146705,136.880583,2019,Naoki Ueda,99-198,99,198,Sushi,1,0,0,Not available
+Sushi Sakai,"2F, LANE Round Bldg, 3-20 Nishinakasu, Chuo-ku, Fukuoka",JPN,Japan,33.590837,130.405567,2014,Daigo Sakai,270-297,270,297,Sushi,2,0,0,Not available
+Sushi Komada,"2 Chome-14-18 Kawasaki, Ise, Mie 516-0009, Japan",JPN,Japan,34.494619,136.715224,2019,Kenri Komada,180,180,180,Sushi,2,0,0,Not available
+Sushi Gyoten,"1-2-12 Hirao, Chuo-ku, Fukuoka",JPN,Japan,33.580324,130.401163,2014,Kenji Gyoten,225-261,225,261,Sushi,1,0,0,Not available
+Ryugin,"7F, Tokyo Midtown Hibiya, 1-1-2 Yurakucho, Chiyoda-ku, Tokyo",JPN,Japan,35.674066,139.759054,2012,Seiji Yamamoto,441,441,441,Japanese,4,0,0,Not available
+Quintessence,"1F, Garden City Shinagawa Gotenyama, 6-7-29 Kitashinagawa, Shinagawa-ku, Tokyo",JPN,Japan,35.623996,139.73309,2008,Shuzo Kishida,270,270,270,French,3,0,0,Not available
+Nakashima,"10-4 Higashihakushimacho, Naka-ku, Hiroshima",JPN,Japan,34.405611,132.464998,2013,Tetsuo Nakashima,97-146,97,146,Japanese,2,0,0,Not available
+Isshisoden Nakamura,"136 Matsushitacho, Nakagyo-ku, Kyoto",JPN,Japan,35.01037,135.765062,2011,Motokazu Nakamura,171-342,171,342,Japanese,3,0,0,Not available
+Mizai,"613 Maruyamacho, Higashiyama-ku, Kyoto",JPN,Japan,35.002976,135.782354,2014 & 2010–12,Hitoshi Ishihara,450,450,450,Japanese,2,0,0,Not available
+Makimura,"3-11-5 Minamioi, Shinagawa-ku, Tokyo",JPN,Japan,35.590846,139.735425,2015,Makimura Akio,225,225,225,Japanese,2,0,0,Not available
+Maeda,"570-118 Giommachi-minamigawa, Higashiyama-ku, Kyoto",JPN,Japan,35.001582,135.77416,2020,Yujiro Maeda,270,270,270,Japanese,2,0,0,Not available
+L'Osier,"7-5-5 Ginza, Chuo-ku, Tokyo",JPN,Japan,35.66966,139.761245,2019 & 2008–10,Olivier Chaignon,117-396,117,396,French,4,0,0,Not available
+Kohaku,"3-4 Kagurazaka, Shinjuku-ku, Tokyo",JPN,Japan,35.70074,139.740981,2016,Koji Koizumi,297,297,297,Japanese,2,0,0,Not available
+Kitcho Arashiyama Honten,"58 Sagatenryuji-susukinobabacho, Ukyo-ku, Kyoto",JPN,Japan,35.013642,135.674658,2010,Kunio Tokuoka,477-899,477,899,Japanese,5,0,0,Not available
+Kikunoi Honten,"459 Shimokawaracho, Higashiyama-ku, Kyoto",JPN,Japan,35.001483,135.782056,2010,Yoshihiro Murata,153-576,153,576,Japanese,5,0,0,Not available
+Kashiwaya,"2-5-18 Senriyamanishi, Suita",JPN,Japan,34.770323,135.501166,2011,Hideaki Matsuo,117-333,117,333,Japanese,3,0,0,Not available
+Kanda,"3-6-34 Motoazabu, Minato-ku, Tokyo",JPN,Japan,35.657048,139.728715,2008,Hiroyuki Kanda,333,333,333,Japanese,2,0,0,Not available
+Kadowaki,"2-7-2, Azabujuban, Minato-ku, Tokyo",JPN,Japan,35.655946,139.73361,2020,Toshiya Kadowaki,225-540,225,540,Japanese,2,0,0,Not available
+Joël Robuchon,"Yebisu Garden Place, 1-13-1 Mita, Meguro-ku, Tokyo",JPN,Japan,35.641934,139.714582,2008,Michael Michaelidis,189-468,189,468,French,5,0,0,Not available
+Kagurazaka Ishikawa,"5-37 Kagurazaka, Shinjuku-ku, Tokyo",JPN,Japan,35.701212,139.739443,2009,Hideki Ishikawa,324-441,324,441,Japanese,2,0,0,Not available
+Iida,"120-1 Fukunagacho, Nakagyo-ku, Kyoto",JPN,Japan,35.009802,135.764793,2018,Shinichi Iida,306-495,306,495,Japanese,2,0,0,Not available
+Hyotei,"35 Nanzenji-kusagawacho, Sakyo-ku, Kyoto",JPN,Japan,35.011424,135.786737,2010,Yoshihiro Takahashi,234-405,234,405,Japanese,3,0,0,Not available
+Hijikata,"3-11-26 Marunochi, Naka-Ku, Nagoya",JPN,Japan,35.176205,136.902869,2019,Shoji Hijikata,162-198,162,198,Japanese,2,0,0,Not available
+Hajime,"1F, i Place 1-9-11 Edobori, Nishi-ku, Osaka",JPN,Japan,34.688721,135.496058,2018 & 2010–12,Hajime Yoneda,351-477,351,477,Innovative,3,0,0,Not available
+Gion Sasaki,"566-27 Komatsucho, Higashiyama-ku, Kyoto",JPN,Japan,34.998911,135.774996,2020,Hiroshi Sasaki,72-261,72,261,Japanese,2,0,0,Not available
+Le Clos des Sens,"13 rue Jean-Mermoz - à Annecy-le-Vieux, Annecy, 74940, France",FRA,France,45.917819,6.144412,2019,Laurent Petit,138-227,138,227,Creative,3,1,1,". L'écrevisse du lac d'Annecy et l'envolée de champignons
 . Omble chevalier sauvage et soupe de poutargue lacustre
 . Chicorée maison évanescente"
-Maison Lameloise,"36 place d'Armes, Chagny, 71150, France",FRA,France,46.907877,4.752989,2007,Éric Pras,92-254,92.00,254.00,Modern Cuisine,3,0,0,". Langoustines marinées croustillantes au riz soufflé, céleri et pomme verte, crème à la moutarde et caviar
+Maison Lameloise,"36 place d'Armes, Chagny, 71150, France",FRA,France,46.907877,4.752989,2007,Éric Pras,92-254,92,254,Modern Cuisine,3,0,0,". Langoustines marinées croustillantes au riz soufflé, céleri et pomme verte, crème à la moutarde et caviar
 . Homard bleu dans l'esprit d'un bourguignon, queue rôtie et sauce civet
 . Onctueux chocolat Équateur, crème glacée à la fève de cacao"
-Le 1947,"Le Jardin Alpin, Courchevel 1850, 73120, France",FRA,France,45.411413,6.631677,2017,Yannick Alléno and Gérard Barbin,292-427,292.00,427.00,Creative,4,0,0,". Une ballade en sous-bois
+Le 1947,"Le Jardin Alpin, Courchevel 1850, 73120, France",FRA,France,45.411413,6.631677,2017,Yannick Alléno and Gérard Barbin,292-427,292,427,Creative,4,0,0,". Une ballade en sous-bois
 . Bœuf Wagyu cuit au feu de bois, pommes de terre au barbot à la moelle et condimentées au cumin
 . Fuseau croustillant à la truffe noire et fleur de sel"
-Les Prés d'Eugénie - Michel Guérard,"Place de l'Impératrice, Eugénie-les-Bains, 40320, France",FRA,France,43.696701,-0.380192,1977,Michel Guérard,150-281,150.00,281.00,Classic Cuisine,5,0,1,". Caviar glacé à la russe, brioche d'agrumes et velouté soyeux
+Les Prés d'Eugénie - Michel Guérard,"Place de l'Impératrice, Eugénie-les-Bains, 40320, France",FRA,France,43.696701,-0.380192,1977,Michel Guérard,150-281,150,281,Classic Cuisine,5,0,1,". Caviar glacé à la russe, brioche d'agrumes et velouté soyeux
 . Canard laqué ""Vasco de Gama"" et soufflé d'oranges aux cacahouètes
 . Feuilleté croquant au chocolat salé-poivré, sabayon d'endive caramélisée"
-L'Auberge du Vieux Puits,"5 avenue St-Victor, Fontjoncouse, 11360, France",FRA,France,43.048529,2.788784,2010,Gilles Goujon,146-243,146.00,243.00,Creative,3,0,0,". Œuf de poule pourri de truffes, briochine tiède et cappuccino à boire
+L'Auberge du Vieux Puits,"5 avenue St-Victor, Fontjoncouse, 11360, France",FRA,France,43.048529,2.788784,2010,Gilles Goujon,146-243,146,243,Creative,3,0,0,". Œuf de poule pourri de truffes, briochine tiède et cappuccino à boire
 . Rouget barbet, pomme bonne bouche fourrée d'une brandade en ""bullinada""
 . Citron de Menton cassant, sorbet citrus bergamote et kumquat, crème thym citron"
-Christopher Coutanceau,"plage de la Concurrence, La Rochelle, 17000, France",FRA,France,46.155331,-1.160033,2020,Christopher Coutanceau,81-249,81.00,249.00,Seafood,4,0,0,". Langoustines de la Cotinière en tartare, gelée de pinces
+Christopher Coutanceau,"plage de la Concurrence, La Rochelle, 17000, France",FRA,France,46.155331,-1.160033,2020,Christopher Coutanceau,81-249,81,249,Seafood,4,0,0,". Langoustines de la Cotinière en tartare, gelée de pinces
 . Sardines de la tête à la queue, glace au bouffi
 . Variation de l'Estran"
-Christophe Bacquié,"3001 route des Hauts-du-Camp, Le Castellet, 83330, France",FRA,France,43.250003,5.783332,2018,Christophe Bacquié,162-292,162.00,292.00,Modern Cuisine,4,0,0,". Aïoli moderne, légumes de nos maraîchers et poulpe de Méditerranée
+Christophe Bacquié,"3001 route des Hauts-du-Camp, Le Castellet, 83330, France",FRA,France,43.250003,5.783332,2018,Christophe Bacquié,162-292,162,292,Modern Cuisine,4,0,0,". Aïoli moderne, légumes de nos maraîchers et poulpe de Méditerranée
 . Retour de pêche grillé, pois chiche de Rougiers, coquillages et jus de salicorne
 . Pamplemousse et eau à la baie des Batak"
-L'Oustau de Baumanière,"Mas de Baumanière, Les Baux-de-Provence, 13520, France",FRA,France,43.747023,4.795816,2020,Glenn Viel,123-249,123.00,249.00,Modern Cuisine,5,0,1,". Rouget onctueux, crème fermière, écailles croustillantes et socca
+L'Oustau de Baumanière,"Mas de Baumanière, Les Baux-de-Provence, 13520, France",FRA,France,43.747023,4.795816,2020,Glenn Viel,123-249,123,249,Modern Cuisine,5,0,1,". Rouget onctueux, crème fermière, écailles croustillantes et socca
 . Pigeonneau dans un nid de foin, champignon de Paris légèrement fumé et pulpe d'abricot
 . Millefeuille tradition Baumanière à la vanille de Madagascar"
-La Bouitte,"à St-Marcel, Saint-Martin-de-Belleville, 73440, France",FRA,France,45.369109,6.513324,2015,René and Maxime Meilleur,183-362,183.00,362.00,Creative,3,0,1,". Omble chevalier nacré, badigeonné de génépi, pousses de roquette
+La Bouitte,"à St-Marcel, Saint-Martin-de-Belleville, 73440, France",FRA,France,45.369109,6.513324,2015,René and Maxime Meilleur,183-362,183,362,Creative,3,0,1,". Omble chevalier nacré, badigeonné de génépi, pousses de roquette
 . Pigeonneau rôti, pommes de terre fondantes, ragoût sur toast, champignons et chénopodes
 . Le lait dans tous ses états"
-Le Petit Nice,"Anse de Maldormé, Marseille, 13007, France",FRA,France,43.280123,5.352097,2008,Gérald Passédat,130-422,130.00,422.00,Seafood,4,1,1,". Poissons du sud en caravane nordique, poutargue, caviar et grattons
+Le Petit Nice,"Anse de Maldormé, Marseille, 13007, France",FRA,France,43.280123,5.352097,2008,Gérald Passédat,130-422,130,422,Seafood,4,1,1,". Poissons du sud en caravane nordique, poutargue, caviar et grattons
 . Loup de palangre ""Lucie Passedat""
 . Nougat évanescent au lait d’amande, pistache et miel"
-Flocons de Sel,"1775 route du Leutaz, Megève, 74120, France",FRA,France,45.830263,6.596868,2012,Emmanuel Renaut,195-335,195.00,335.00,Creative,3,1,0,". Filet de féra du lac Léman cuit au sel servi froid, jus à la berce
+Flocons de Sel,"1775 route du Leutaz, Megève, 74120, France",FRA,France,45.830263,6.596868,2012,Emmanuel Renaut,195-335,195,335,Creative,3,1,0,". Filet de féra du lac Léman cuit au sel servi froid, jus à la berce
 . Tourte de gibier de nos montagnes, jus à la mondeuse
 . Tarte tiède au chocolat légèrement fumée, glace au bois"
-Mirazur,"30 avenue Aristide-Briand, Menton, 06500, France",FRA,France,43.785928,7.528068,2019,Mauro Colagreco,281,281.00,281.00,Creative,3,1,0,". Betterave en croûte de sel, sauce au caviar
+Mirazur,"30 avenue Aristide-Briand, Menton, 06500, France",FRA,France,43.785928,7.528068,2019,Mauro Colagreco,281,281,281,Creative,3,1,0,". Betterave en croûte de sel, sauce au caviar
 . Pigeon, fraises des bois et épeautre
 . ""Naranjo en flor"" : crème de safran, espuma d'amande et sorbet orange"
-Le Louis XV - Alain Ducasse à l'Hôtel de Paris,"place du Casino, Monte-Carlo, 98000, France",FRA,France,43.739188,7.427151,1990,Franck Cerutti and Dominique Lory,195-411,195.00,411.00,Mediterranean Cuisine,5,0,1,". Gamberoni de San Remo, fine gelée de poissons de roche et caviar
+Le Louis XV - Alain Ducasse à l'Hôtel de Paris,"place du Casino, Monte-Carlo, 98000, France",FRA,France,43.739188,7.427151,1990,Franck Cerutti and Dominique Lory,195-411,195,411,Mediterranean Cuisine,5,0,1,". Gamberoni de San Remo, fine gelée de poissons de roche et caviar
 . Loup de Méditerranée aux agrumes du mentonnais
 . Baba au rhum de votre choix, crème mi-montée"
-Le Bois sans Feuilles - Troisgros,"728 route de Villerest, Ouches, 42155, France",FRA,France,46.009696,3.991942,1968,Michel and César Troisgros,178-519,178.00,519.00,Creative,4,1,0,". Champs colorés d'artichauts
+Le Bois sans Feuilles - Troisgros,"728 route de Villerest, Ouches, 42155, France",FRA,France,46.009696,3.991942,1968,Michel and César Troisgros,178-519,178,519,Creative,4,1,0,". Champs colorés d'artichauts
 . Lotte aux baies potagères
 . Légèreté au sésame et au sarrasin"
-Kei,"5 rue du Coq-Heron, Paris, 75001, France",FRA,France,48.864359,2.342078,2020,Kei Kobayashi,63-303,63.00,303.00,Modern Cuisine,3,0,0,". Jardin de légumes croquants, saumon fumé, mousse de roquette, émulsion de citron, vinaigrette de tomates et crumble d'olives noires
+Kei,"5 rue du Coq-Heron, Paris, 75001, France",FRA,France,48.864359,2.342078,2020,Kei Kobayashi,63-303,63,303,Modern Cuisine,3,0,0,". Jardin de légumes croquants, saumon fumé, mousse de roquette, émulsion de citron, vinaigrette de tomates et crumble d'olives noires
 . Bar de ligne rôti sur ses écailles croustillantes
 . Smoothie aux fruits exotiques et sucre soufflé"
-L'Ambroisie,"9 place des Vosges, Paris, 75004, France",FRA,France,48.85536,2.364354,1988,Bernard Pacaud,238-357,238.00,357.00,Classic Cuisine,4,1,0,". Feuillantines de langoustines aux graines de sésame, sauce curry
+L'Ambroisie,"9 place des Vosges, Paris, 75004, France",FRA,France,48.85536,2.364354,1988,Bernard Pacaud,238-357,238,357,Classic Cuisine,4,1,0,". Feuillantines de langoustines aux graines de sésame, sauce curry
 . Escalopines de bar à l'émincé d'artichaut, caviar golden
 . Tarte fine sablée au cacao amer, crème glacée à la vanille Bourbon"
-Guy Savoy,"11 quai de Conti, Paris, 75006, France",FRA,France,48.856717,2.33915,2002,Guy Savoy,270-517,270.00,517.00,Creative,4,0,0,". Soupe d'artichaut à la truffe noire, brioche feuilletée aux champignons et aux truffes
+Guy Savoy,"11 quai de Conti, Paris, 75006, France",FRA,France,48.856717,2.33915,2002,Guy Savoy,270-517,270,517,Creative,4,0,0,". Soupe d'artichaut à la truffe noire, brioche feuilletée aux champignons et aux truffes
 . Canette maturée aux épices, gratin de bette au laurier
 . Mille feuilles ouvertes à la vanille de Tahiti"
-Arpège,"84 rue de Varenne, Paris, 75007, France",FRA,France,48.85575,2.317005,1996,Alain Passard,189-454,189.00,454.00,Creative,3,1,0,". Chaud-froid d’œuf au sirop d'érable, vinaigre de Xérès et quatre épices
+Arpège,"84 rue de Varenne, Paris, 75007, France",FRA,France,48.85575,2.317005,1996,Alain Passard,189-454,189,454,Creative,3,1,0,". Chaud-froid d’œuf au sirop d'érable, vinaigre de Xérès et quatre épices
 . Jardinière arlequin et merguez végétale
 . Tarte aux pommes bouquet de roses et caramel lacté"
-Alain Ducasse au Plaza Athénée,"25 avenue Montaigne, Paris, 75008, France",FRA,France,48.86624,2.304219,2016,Romain Meder,227-427,227.00,427.00,Creative,5,0,0,". Pois chiche des Hautes-Alpes, caviar doré
+Alain Ducasse au Plaza Athénée,"25 avenue Montaigne, Paris, 75008, France",FRA,France,48.86624,2.304219,2016,Romain Meder,227-427,227,427,Creative,5,0,0,". Pois chiche des Hautes-Alpes, caviar doré
 . Homard de Normandie, radis et cresson de fontaine, herbes pilées
 . Citron niçois, algues kombu à l'estragon"
-Alléno Paris au Pavillon Ledoyen,"8 avenue Dutuit, Paris, 75008, France",FRA,France,48.866097,2.316456,2015,Yannick Alléno,227-487,227.00,487.00,Modern Cuisine,5,0,0,". Tarte de langoustine aux grains de caviar
+Alléno Paris au Pavillon Ledoyen,"8 avenue Dutuit, Paris, 75008, France",FRA,France,48.866097,2.316456,2015,Yannick Alléno,227-487,227,487,Modern Cuisine,5,0,0,". Tarte de langoustine aux grains de caviar
 . Feuille à feuille de bœuf Wagyu aux gros Paris
 . Extraction de sapin en gelée glacée au café et éclats de cristalline épicés"
-Epicure,"112 rue du Faubourg-Saint-Honoré, Paris, 75008, France",FRA,France,48.871742,2.31485,2009,Éric Fréchon,124-411,124.00,411.00,Modern Cuisine,5,0,1,". Macaronis farcis, truffe noire, artichaut et foie gras gratinés au vieux parmesan
+Epicure,"112 rue du Faubourg-Saint-Honoré, Paris, 75008, France",FRA,France,48.871742,2.31485,2009,Éric Fréchon,124-411,124,411,Modern Cuisine,5,0,1,". Macaronis farcis, truffe noire, artichaut et foie gras gratinés au vieux parmesan
 . Merlan de ligne en croûte de pain de mie aux amandes, tétragone à l'huile de curry
 . Citron de Menton givré au limoncello et citron confit aux saveurs de pêche blanche et verveine"
-Le Cinq,"31 avenue George-V, Paris, 75008, France",FRA,France,48.868785,2.300239,2016,Christian Le Squer,162-422,162.00,422.00,Modern Cuisine,5,1,0,". Langoustines bretonnes raidies, mayonnaise tiède et galettes de sarrasin croquantes
+Le Cinq,"31 avenue George-V, Paris, 75008, France",FRA,France,48.868785,2.300239,2016,Christian Le Squer,162-422,162,422,Modern Cuisine,5,1,0,". Langoustines bretonnes raidies, mayonnaise tiède et galettes de sarrasin croquantes
 . Bar de ligne, caviar et lait ribot de mon enfance
 . Givré laitier au goût de levure"
-Pierre Gagnaire,"6 rue Balzac, Paris, 75008, France",FRA,France,48.87325,2.300451,1998,Pierre Gagnaire,106-454,106.00,454.00,Creative,4,0,0,". Parfums de terre
+Pierre Gagnaire,"6 rue Balzac, Paris, 75008, France",FRA,France,48.87325,2.300451,1998,Pierre Gagnaire,106-454,106,454,Creative,4,0,0,". Parfums de terre
 . Canard au chocolat
 . Le grand dessert"
-Le Pré Catelan,"Route de Suresnes - Bois de Boulogne, Paris, 75016, France",FRA,France,48.864011,2.250738,2007,Frédéric Anton,151-346,151.00,346.00,Creative,5,0,0,". Langoustine préparée en ravioli au foie gras, fine gelée à la feuille d’or
+Le Pré Catelan,"Route de Suresnes - Bois de Boulogne, Paris, 75016, France",FRA,France,48.864011,2.250738,2007,Frédéric Anton,151-346,151,346,Creative,5,0,0,". Langoustine préparée en ravioli au foie gras, fine gelée à la feuille d’or
 . Saumon fumé au bois de cerisier, crème de wasabi, biscuit et fleur de courgette
 . Pomme soufflée croustillante, crème glacée au caramel, cidre et sucre pétillant"
-Régis et Jacques Marcon,"Larsiallas, Saint-Bonnet-le-Froid, 43290, France",FRA,France,45.138877,4.433318,2005,Régis and Jacques Marcon,189-303,189.00,303.00,Creative,4,0,0,". Chaud et froid de langoustines à la reine-des-prés
+Régis et Jacques Marcon,"Larsiallas, Saint-Bonnet-le-Froid, 43290, France",FRA,France,45.138877,4.433318,2005,Régis and Jacques Marcon,189-303,189,303,Creative,4,0,0,". Chaud et froid de langoustines à la reine-des-prés
 . Omble chevalier en court bouillon de serpolet et velouté à la verveine
 . Feuillets croustillants à l’amande, compotée d’abricots et caramel de morilles"
-La Vague d'Or,"plage de la Bouillabaisse, Saint-Tropez, 83990, France",FRA,France,43.266968,6.627163,2013,Arnaud Donckele,260-411,260.00,411.00,Creative,4,0,1,". La borgne contemporaine
+La Vague d'Or,"plage de la Bouillabaisse, Saint-Tropez, 83990, France",FRA,France,43.266968,6.627163,2013,Arnaud Donckele,260-411,260,411,Creative,4,0,1,". La borgne contemporaine
 . Saint-pierre cuit en immersion d'haliotis de la lagune de Thau, poireau crayon et oignon rouge
 . Accord autour de l’abricot, de l’amande et du thym serpolet"
-L'Assiette Champenoise,"40 avenue Paul-Vaillant-Couturier, à Tinqueux, Reims, 51430, France",FRA,France,49.247672,4.003811,2014,Arnaud Lallement,119-341,119.00,341.00,Creative,4,1,0,". Langoustine royale, citron caviar et nage crémée
+L'Assiette Champenoise,"40 avenue Paul-Vaillant-Couturier, à Tinqueux, Reims, 51430, France",FRA,France,49.247672,4.003811,2014,Arnaud Lallement,119-341,119,341,Creative,4,1,0,". Langoustine royale, citron caviar et nage crémée
 . Homard bleu ""hommage à mon papa""
 . Chocolat croquant"
-Pic,"285 avenue Victor-Hugo, Valence, 26000, France",FRA,France,44.917624,4.8856,2007,Anne-Sophie Pic,130-411,129.60,410.41,Creative,5,1,0,". Berlingots au banon, thé matcha bergamote
+Pic,"285 avenue Victor-Hugo, Valence, 26000, France",FRA,France,44.917624,4.8856,2007,Anne-Sophie Pic,130-411,129.6,410.41,Creative,5,1,0,". Berlingots au banon, thé matcha bergamote
 . Ris de veau de lait
 . Millefeuille blanc, crème légère à la vanille de Tahiti"
 Georges Blanc,"Place du Marché, Vonnas, 01540, France",FRA,France,46.219554,4.990038,1984,Georges Blanc,222-319,221.41,318.61,Creative,4,0,0,". Truite de la source du moulin de l'Etre au safran de Bresse pimenté
 . Poularde de Bresse ""Elisa Blanc"", crêpes vonnassienne
 . Dans l'esprit d'un saint-honoré, variation d'agrumes à la verveine odorante"
-The Waterside Inn,"Ferry Road, Bray, SL6 2AT, United Kingdom",GBR,United Kingdom,51.509049,-0.701781,1985,Alain Roux,76-208,76.00,208.00,French,4,1,0,Tronçonnettes de homard poêlées minute au porto blanc. 
-The Fat Duck,"High Street, Bray, SL6 2AQ, United Kingdom",GBR,United Kingdom,51.507914,-0.7039367,2004,Heston Blumenthal,387,387.00,387.00,Creative,3,0,0,Sound of the sea
-Restaurant Gordon Ramsay,"68-69 Royal Hospital Road, Chelsea, SW3 4HP, United Kingdom",GBR,United Kingdom,51.4854834,-0.1643114,2001,Gordon Ramsay and Matt Abé,83-220,83.00,220.00,French,4,1,0,"Ravioli of lobster, langoustine and salmon with sorrel"
-Alain Ducasse at the Dorchester,"Park Lane, Mayfair, W1K 1QA, United Kingdom",GBR,United Kingdom,51.5072938,-0.1523412,2010,Jean-Philippe Blondet,83-209,83.00,209.00,French,5,1,0,Dorset crab with celeriac and caviar
-Sketch (The Lecture Room and Library),"9 Conduit Street, Mayfair, W1S 2XG, United Kingdom",GBR,United Kingdom,51.512693,-0.141529,2020,Pierre Gagnaire,136-150,136.00,150.00,French,5,1,0,"9 Conduit St soufflé, leeks with English mustard"
-De Librije,"Spinhuisplein 1, Zwolle, 8011 ZZ, Netherlands",NLD,Netherlands,52.5153889,6.0977556,2004,Jonnie Boer,114-228,114.00,228.00,Modern Cuisine,4,1,0,"Langoustines met tomato, kombucha en kouseband"
-Inter Scaldes,"Zandweg 2, Kruiningen, 4416 NA, Netherlands",NLD,Netherlands,51.4570412,4.022418,2018,Jannis Brevet,151-293,151.00,293.00,Modern Cuisine,4,0,1,"Zeeuwse kreeft met artisjok, hoeve-ei, pistachio,truffle en oranjebloesem"
-Cheval Blanc,"Blumenrain 8, Basel, 4001, Switzerland",CHE,Switzerland,47.560466,7.587671,2016,Peter Knogl,151-255,151.00,255.00,Classic French,4,0,1,"Langoustino Madras Curry, Granny Smith Appel and Salzzitrone"
-Restaurant de l'Hôtel de Ville,"Rue d'Yverdon 1, Crissier, 1023, Switzerland",CHE,Switzerland,46.5540659,6.5766573,1992,Franck Giovannini,184-398,184.00,398.00,Classic French,4,0,0,Noix de Saint-Jacques caramélisées aux grains de Chasselas réduction gourmande au Saivignon doux
-Schloss Schauenstein,"Schlossgass 77, Fürstenau, 7414, Switzerland",CHE,Switzerland,46.7213317,9.4457825,2011,Andreas Caminada,184-342,184.00,342.00,Creative,3,0,0,"Gebeizter Zander, gesalzene Aprikose, Dill"
-Les Amis,"Shaw Centre, #01-16 Scotts Road, Singapore",SGP,Singapore,1.3066019,103.8314361,2019,Sébastian Lepinoy,89-291,89.00,291.00,French,3,0,0,
-Odette,"National Gallery Singapore, #01-04, 1 St., Andrew Road, Singapore",SGP,Singapore,1.2897067,103.8514433,2019,Julien Royer,89-227,89.00,227.00,French Contemporary,4,0,0,
-Gaon,"M Floor Horim Art Center, 317 Dosandaero, Gangnam-gu, Seoul, South Korea",KOR,South Korea,37.522478,127.036077,2016,Kim Byoung-Jin,244,244.00,244.00,Korean,3,0,0,
-La Yeon,"23F Shilla Hotel, 249 Dongho-ro, Jung-gu, Seoul, South Korea",KOR,South Korea,37.5562317,127.0054476,2016,Kim Sung-II,88-220,88.00,220.00,Korean,4,0,0,
-Xin Rong Ji,"1F, East Tower, Genesis Beijing, 8 Xinyuan South Road, Chaoyang, Beijing, China",CHN,China,31.2281,121.4506,2020,Li Dong,65-130,65.00,130.00,Taizhou,3,0,0,
-Ultraviolet,"6F, Bund 18, 18 Zhongshan Dong Yi Road, Huangpu, China",CHN,China,31.239264,121.489651,2018,Paul Pairet,600-860,600.00,860.00,Avant-garde Figurative,3,0,0,
-Restaurant Amador,"Grinzingerstr.86, Wien, 1190, Austria",AUT,Austria,48.2539302,16.3586121,2019,Juan Amador,75-255,75.00,255.00,Creative,3,0,1,"Carabineros, Karfiol, Lisette, Turron"
-Hof van Cleve,"Riemegemstraat 1, Kruishoutem, 9770, Belgium",BEL,Belgium,50.903652,3.5096786,2005,Peter Goossens,211-482,211.00,482.00,Creative,4,1,1,"Langoustine uit Guilvinec met romanesco, artisjok en dashi"
-Geranium,"Per Henrik Lings Allé, Parken National Stadium, København, 2100 Ø, Denmark",DNK,Denmark,55.7036082,12.5721074,2016,Rasmus Kofoed,377,377.00,377.00,Creative,4,0,0,Crispy leaves of Jerusalem artichoke with pickled walnut
-Maaemo,"Dronning Eufemias gate 23, 0194 Oslo, Norway",NOR,Norway,59.9075576,10.758191,2016,Esben Holmboe Bang,319,319.00,319.00,"Organic, Wild Food and Produce",4,1,0,
-Frantzén,"Kalra Norra Kyrkogata 26, Stockholm, 11122, Sweden",SWE,Sweden,59.3338761,18.0585758,2018,Bj̈orn Frantzén,348,348.00,348.00,Modern Cuisine,3,0,0,French toast ' Grand Tradition 2008'
-Le Palais,"17F, Palais de Chine Hotel, 3, Section 1, Chengde Road, Datong, Taipei, 110,Taiwan",TWN,Taiwan,25.0494693,121.5168741,2018,Ken Chan and Matt Chen,36-93,36.00,93.00,Cantonese,2,0,0,
-Alinea,"1723 N. Halsted St., Chicago, 60614, United States",USA,United States,41.9134,-87.6482,2011,Grant Achatz and Simon Davies,250 - 270,250.00,270.00,Contemporary,4,0,0,
-SingleThread,"131 North St., Healdsburg, 95448, United States",USA,United States,38.612333,-122.869658,2019,Kyle Connaughton,75 - 150,75.00,150.00,Contemporary,4,0,0,
-Manresa,"320 Village Ln., Los Gatos, 95030, United States",USA,United States,37.227397,-121.980769,2016,David Kinch and Nicholas Romero,75 - 150,75.00,150.00,Contemporary,3,0,0,
-Le Bernardin,"155 W. 51st St., New York, 10019, United States",USA,United States,40.761389,-73.981667,2006,"Éric Ripert, Chris Muller, and Eric Gestel",75 - 150,75.00,150.00,Seafood,4,0,0,
-Per Se,"10 Columbus Circle, New York, 10019, United States",USA,United States,40.768735,-73.982938,2006,Thomas Keller and Corey Chow,75 - 150,75.00,150.00,Contemporary,5,0,0,
-Masa,"10 Columbus Circle, New York, 10019, United States",USA,United States,40.768056,-73.981944,2009,Masa Takayama,75 - 150,75.00,150.00,Japanese,2,0,0,
-Eleven Madison Park,"11 Madison Ave., New York, 10010, United States",USA,United States,40.741673,-73.987242,2012,Daniel Humm and Brian Lockwood,125,125.00,125.00,Contemporary,4,0,0,
-Chef's Table at Brooklyn Fare,"431 W. 37th St., New York, 10018, United States",USA,United States,40.7561266,-73.9986504,2012,César Ramírez,75 - 395,75.00,395.00,Contemporary,3,0,0,
-Atelier Crenn,"3127 Fillmore St., San Francisco, 94123, United States",USA,United States,37.79895,-122.43588,2019,Dominique Crenn,75 - 150,75.00,150.00,Contemporary,3,0,0,
-Benu,"22 Hawthorne St., San Francisco, 94105, United States",USA,United States,37.785407,-122.399112,2015,Corey Lee and Brandon Rodgers,75 - 150,75.00,150.00,Asian,3,0,0,
-Quince,"470 Pacific Ave., San Francisco, 94133, United States",USA,United States,37.797566,-122.403396,2017,Michael Tusk and Neil Stetz,75 - 150,75.00,150.00,Contemporary,4,0,0,
-The Restaurant at Meadowood,"900 Meadowood Ln., St. Helena, 94574, United States",USA,United States,38.522222,-122.467222,2011,Christopher Kostow and John Hong,75 - 150,75.00,150.00,Contemporary,4,0,0,
-The Inn at Little Washington,"309 Middle St., Washington, D.C., 22747, United States",USA,United States,38.713473,-78.159529,2019,Patrick O’Connell,149 - 238,149.00,238.00,American,3,0,0,
-The French Laundry,"6640 Washington St., Yountville, 94599, United States",USA,United States,38.404459,-122.36521,2007,Thomas Keller and David Breeden,75 - 150,75.00,150.00,Contemporary,4,0,0,
-Piazza Duomo,"vicolo dell'Arco 1, angolo piazza Risorgimento 4, ALBA, 12051, Italy",ITA,Italy,44.70052,8.03598,2013,Enrico Crippa,216 - 314,216.00,314.00,Creative,3,1,0,"Insalata 21 
+The Waterside Inn,"Ferry Road, Bray, SL6 2AT, United Kingdom",GBR,United Kingdom,51.509049,-0.701781,1985,Alain Roux,76-208,76,208,French,4,1,0,Tronçonnettes de homard poêlées minute au porto blanc. 
+The Fat Duck,"High Street, Bray, SL6 2AQ, United Kingdom",GBR,United Kingdom,51.507914,-0.7039367,2004,Heston Blumenthal,387,387,387,Creative,3,0,0,Sound of the sea
+Restaurant Gordon Ramsay,"68-69 Royal Hospital Road, Chelsea, SW3 4HP, United Kingdom",GBR,United Kingdom,51.4854834,-0.1643114,2001,Gordon Ramsay and Matt Abé,83-220,83,220,French,4,1,0,"Ravioli of lobster, langoustine and salmon with sorrel"
+Alain Ducasse at the Dorchester,"Park Lane, Mayfair, W1K 1QA, United Kingdom",GBR,United Kingdom,51.5072938,-0.1523412,2010,Jean-Philippe Blondet,83-209,83,209,French,5,1,0,Dorset crab with celeriac and caviar
+Sketch (The Lecture Room and Library),"9 Conduit Street, Mayfair, W1S 2XG, United Kingdom",GBR,United Kingdom,51.512693,-0.141529,2020,Pierre Gagnaire,136-150,136,150,French,5,1,0,"9 Conduit St soufflé, leeks with English mustard"
+De Librije,"Spinhuisplein 1, Zwolle, 8011 ZZ, Netherlands",NLD,Netherlands,52.5153889,6.0977556,2004,Jonnie Boer,114-228,114,228,Modern Cuisine,4,1,0,"Langoustines met tomato, kombucha en kouseband"
+Inter Scaldes,"Zandweg 2, Kruiningen, 4416 NA, Netherlands",NLD,Netherlands,51.4570412,4.022418,2018,Jannis Brevet,151-293,151,293,Modern Cuisine,4,0,1,"Zeeuwse kreeft met artisjok, hoeve-ei, pistachio,truffle en oranjebloesem"
+Cheval Blanc,"Blumenrain 8, Basel, 4001, Switzerland",CHE,Switzerland,47.560466,7.587671,2016,Peter Knogl,151-255,151,255,Classic French,4,0,1,"Langoustino Madras Curry, Granny Smith Appel and Salzzitrone"
+Restaurant de l'Hôtel de Ville,"Rue d'Yverdon 1, Crissier, 1023, Switzerland",CHE,Switzerland,46.5540659,6.5766573,1992,Franck Giovannini,184-398,184,398,Classic French,4,0,0,Noix de Saint-Jacques caramélisées aux grains de Chasselas réduction gourmande au Saivignon doux
+Schloss Schauenstein,"Schlossgass 77, Fürstenau, 7414, Switzerland",CHE,Switzerland,46.7213317,9.4457825,2011,Andreas Caminada,184-342,184,342,Creative,3,0,0,"Gebeizter Zander, gesalzene Aprikose, Dill"
+Les Amis,"Shaw Centre, #01-16 Scotts Road, Singapore",SGP,Singapore,1.3066019,103.8314361,2019,Sébastian Lepinoy,89-291,89,291,French,3,0,0,Not available
+Odette,"National Gallery Singapore, #01-04, 1 St., Andrew Road, Singapore",SGP,Singapore,1.2897067,103.8514433,2019,Julien Royer,89-227,89,227,French Contemporary,4,0,0,Not available
+Gaon,"M Floor Horim Art Center, 317 Dosandaero, Gangnam-gu, Seoul, South Korea",KOR,South Korea,37.522478,127.036077,2016,Kim Byoung-Jin,244,244,244,Korean,3,0,0,Not available
+La Yeon,"23F Shilla Hotel, 249 Dongho-ro, Jung-gu, Seoul, South Korea",KOR,South Korea,37.5562317,127.0054476,2016,Kim Sung-II,88-220,88,220,Korean,4,0,0,Not available
+Xin Rong Ji,"1F, East Tower, Genesis Beijing, 8 Xinyuan South Road, Chaoyang, Beijing, China",CHN,China,31.2281,121.4506,2020,Li Dong,65-130,65,130,Taizhou,3,0,0,Not available
+Ultraviolet,"6F, Bund 18, 18 Zhongshan Dong Yi Road, Huangpu, China",CHN,China,31.239264,121.489651,2018,Paul Pairet,600-860,600,860,Avant-garde Figurative,3,0,0,Not available
+Restaurant Amador,"Grinzingerstr.86, Wien, 1190, Austria",AUT,Austria,48.2539302,16.3586121,2019,Juan Amador,75-255,75,255,Creative,3,0,1,"Carabineros, Karfiol, Lisette, Turron"
+Hof van Cleve,"Riemegemstraat 1, Kruishoutem, 9770, Belgium",BEL,Belgium,50.903652,3.5096786,2005,Peter Goossens,211-482,211,482,Creative,4,1,1,"Langoustine uit Guilvinec met romanesco, artisjok en dashi"
+Geranium,"Per Henrik Lings Allé, Parken National Stadium, København, 2100 Ø, Denmark",DNK,Denmark,55.7036082,12.5721074,2016,Rasmus Kofoed,377,377,377,Creative,4,0,0,Crispy leaves of Jerusalem artichoke with pickled walnut
+Maaemo,"Dronning Eufemias gate 23, 0194 Oslo, Norway",NOR,Norway,59.9075576,10.758191,2016,Esben Holmboe Bang,319,319,319,"Organic, Wild Food and Produce",4,1,0,Not available
+Frantzén,"Kalra Norra Kyrkogata 26, Stockholm, 11122, Sweden",SWE,Sweden,59.3338761,18.0585758,2018,Bj̈orn Frantzén,348,348,348,Modern Cuisine,3,0,0,French toast ' Grand Tradition 2008'
+Le Palais,"17F, Palais de Chine Hotel, 3, Section 1, Chengde Road, Datong, Taipei, 110,Taiwan",TWN,Taiwan,25.0494693,121.5168741,2018,Ken Chan and Matt Chen,36-93,36,93,Cantonese,2,0,0,Not available
+Alinea,"1723 N. Halsted St., Chicago, 60614, United States",USA,United States,41.9134,-87.6482,2011,Grant Achatz and Simon Davies,250 - 270,250,270,Contemporary,4,0,0,Not available
+SingleThread,"131 North St., Healdsburg, 95448, United States",USA,United States,38.612333,-122.869658,2019,Kyle Connaughton,75 - 150,75,150,Contemporary,4,0,0,Not available
+Manresa,"320 Village Ln., Los Gatos, 95030, United States",USA,United States,37.227397,-121.980769,2016,David Kinch and Nicholas Romero,75 - 150,75,150,Contemporary,3,0,0,Not available
+Le Bernardin,"155 W. 51st St., New York, 10019, United States",USA,United States,40.761389,-73.981667,2006,"Éric Ripert, Chris Muller, and Eric Gestel",75 - 150,75,150,Seafood,4,0,0,Not available
+Per Se,"10 Columbus Circle, New York, 10019, United States",USA,United States,40.768735,-73.982938,2006,Thomas Keller and Corey Chow,75 - 150,75,150,Contemporary,5,0,0,Not available
+Masa,"10 Columbus Circle, New York, 10019, United States",USA,United States,40.768056,-73.981944,2009,Masa Takayama,75 - 150,75,150,Japanese,2,0,0,Not available
+Eleven Madison Park,"11 Madison Ave., New York, 10010, United States",USA,United States,40.741673,-73.987242,2012,Daniel Humm and Brian Lockwood,125,125,125,Contemporary,4,0,0,Not available
+Chef's Table at Brooklyn Fare,"431 W. 37th St., New York, 10018, United States",USA,United States,40.7561266,-73.9986504,2012,César Ramírez,75 - 395,75,395,Contemporary,3,0,0,Not available
+Atelier Crenn,"3127 Fillmore St., San Francisco, 94123, United States",USA,United States,37.79895,-122.43588,2019,Dominique Crenn,75 - 150,75,150,Contemporary,3,0,0,Not available
+Benu,"22 Hawthorne St., San Francisco, 94105, United States",USA,United States,37.785407,-122.399112,2015,Corey Lee and Brandon Rodgers,75 - 150,75,150,Asian,3,0,0,Not available
+Quince,"470 Pacific Ave., San Francisco, 94133, United States",USA,United States,37.797566,-122.403396,2017,Michael Tusk and Neil Stetz,75 - 150,75,150,Contemporary,4,0,0,Not available
+The Restaurant at Meadowood,"900 Meadowood Ln., St. Helena, 94574, United States",USA,United States,38.522222,-122.467222,2011,Christopher Kostow and John Hong,75 - 150,75,150,Contemporary,4,0,0,Not available
+The Inn at Little Washington,"309 Middle St., Washington, D.C., 22747, United States",USA,United States,38.713473,-78.159529,2019,Patrick O’Connell,149 - 238,149,238,American,3,0,0,Not available
+The French Laundry,"6640 Washington St., Yountville, 94599, United States",USA,United States,38.404459,-122.36521,2007,Thomas Keller and David Breeden,75 - 150,75,150,Contemporary,4,0,0,Not available
+Piazza Duomo,"vicolo dell'Arco 1, angolo piazza Risorgimento 4, ALBA, 12051, Italy",ITA,Italy,44.70052,8.03598,2013,Enrico Crippa,216 - 314,216,314,Creative,3,1,0,"Insalata 21 
 31 
 41 
 51 
 Agnello e camomilla 
 Panna cotta Matisse"
-Da Vittorio,"via Cantalupa 17, BRUSAPORTO, 24060, Italy",ITA,Italy,45.6771927,9.7721291,2010,Vittorio Cerea,87 - 303,87.00,303.00,Modern Cuisine,4,0,1,"Uovo all'uovo 
+Da Vittorio,"via Cantalupa 17, BRUSAPORTO, 24060, Italy",ITA,Italy,45.6771927,9.7721291,2010,Vittorio Cerea,87 - 303,87,303,Modern Cuisine,4,0,1,"Uovo all'uovo 
 Moro antartico con crema di wasabi gratinata 
 Cioco punch"
-Dal Pescatore,"località Runate - Canneto sull'Oglio, Runate, 46013, Italy",ITA,Italy,45.17108,10.35911,1996,Nadia Santini,130 - 270,130.00,270.00,Modern Cuisine,4,0,1,"Misticanza dell'orto con orata marinata, mousse di melanzane, burrata e maionese allo zenzero. 
+Dal Pescatore,"località Runate - Canneto sull'Oglio, Runate, 46013, Italy",ITA,Italy,45.17108,10.35911,1996,Nadia Santini,130 - 270,130,270,Modern Cuisine,4,0,1,"Misticanza dell'orto con orata marinata, mousse di melanzane, burrata e maionese allo zenzero. 
 Sella di capriolo con salsa al cabernet e mirtilli neri. Meringa con mousse di pistacchio di Bronte e zabaione al Marsala"
-Reale,"contrada Santa Liberata, località Casadonna, Castel di Sangro, 67031, Italy",ITA,Italy,41.77518,14.38384,2014,Niko Romito,108 - 227,108.00,227.00,Creative,4,0,0,"Cavolfiore gratinato. 
+Reale,"contrada Santa Liberata, località Casadonna, Castel di Sangro, 67031, Italy",ITA,Italy,41.77518,14.38384,2014,Niko Romito,108 - 227,108,227,Creative,4,0,0,"Cavolfiore gratinato. 
 Piccione, chiodi di garofano, acqua e senape. 
 Cioccolato bianco, aceto balsamico, granita di liquirizia e aceto bianco"
-Enoteca Pinchiorri,"via Ghibellina 87, Firenze, 50122, Italy",ITA,Italy,43.77003,11.26232,1993,"Annie Féolde, Italo Bassi, and Riccardo Monco",222 - 384,222.00,384.00,Modern Cuisine,4,0,1,"Ricciola appena scottata nell'olio, capperi, guanciale e porri, raviolo croccante di ostriche e riduzione di cavolo cappuccio. 
+Enoteca Pinchiorri,"via Ghibellina 87, Firenze, 50122, Italy",ITA,Italy,43.77003,11.26232,1993,"Annie Féolde, Italo Bassi, and Riccardo Monco",222 - 384,222,384,Modern Cuisine,4,0,1,"Ricciola appena scottata nell'olio, capperi, guanciale e porri, raviolo croccante di ostriche e riduzione di cavolo cappuccio. 
 Filetti di triglia avvolti nel pane toscano, purea di finocchio candito nell'olio extra vergine e intingolo di maruzzelle. 
 Budino soffice al latte, con gelato al caffè e prugne leggermente marinate"
-Enrico Bartolini al Mudec,"via Tortona 56, Milano, 20123, Italy",ITA,Italy,45.45205,9.16132,2020,Enrico Bartolini,124 - 325,124.00,325.00,Creative,4,0,0,"Alici, ostrica e caviale 2019.
+Enrico Bartolini al Mudec,"via Tortona 56, Milano, 20123, Italy",ITA,Italy,45.45205,9.16132,2020,Enrico Bartolini,124 - 325,124,325,Creative,4,0,0,"Alici, ostrica e caviale 2019.
 Spaghetto all'anguilla affumicata.
 Zabaione tradizionale, albero di arance e gelato al pistacchio di Bronte"
-Osteria Francescana,"via Stella 22, Modena, 41121, Italy",ITA,Italy,44.64481,10.92155,2012,Massimo Bottura,238 - 541,238.00,541.00,Creative,4,0,0,"In campagna: lumache, lepre ed erbe aromatiche.
+Osteria Francescana,"via Stella 22, Modena, 41121, Italy",ITA,Italy,44.64481,10.92155,2012,Massimo Bottura,238 - 541,238,541,Creative,4,0,0,"In campagna: lumache, lepre ed erbe aromatiche.
 A volte germano, a volte pernice ma anche bollito.
 Ooops! Mi è caduta la crostata al limone"
-La Pergola,"via Flaminia km 63,900, MAGLIANO SABINA, 02046, Italy",ITA,Italy,41.9188782,12.47063,2005,Heinz Beck,38 - 45,38.00,45.00,Roman,2,0,1,
-Le Calandre,"via Liguria 1, località Sarmeola, RUBANO, 35030, Italy",ITA,Italy,45.4217744,11.8074542,2002,Massimiliano Alajmo,146 - 243,146.00,243.00,Creative,4,0,0,"Mare Mediterraneo. 
+La Pergola,"via Flaminia km 63,900, MAGLIANO SABINA, 02046, Italy",ITA,Italy,41.9188782,12.47063,2005,Heinz Beck,38 - 45,38,45,Roman,2,0,1,Not available
+Le Calandre,"via Liguria 1, località Sarmeola, RUBANO, 35030, Italy",ITA,Italy,45.4217744,11.8074542,2002,Massimiliano Alajmo,146 - 243,146,243,Creative,4,0,0,"Mare Mediterraneo. 
 Uovo croccante alla ventresca di tonno. 
 Gioco al cioccolato 2020"
-St. Hubertus,"strada Micura de Rue 20, San Cassiano/Sankt Kassian, 39030, Italy",ITA,Italy,46.52674,11.9291244,2018,Norbert Niederkofler,238 - 325,238.00,325.00,Creative,4,0,0,"Tartare di coregone. 
+St. Hubertus,"strada Micura de Rue 20, San Cassiano/Sankt Kassian, 39030, Italy",ITA,Italy,46.52674,11.9291244,2018,Norbert Niederkofler,238 - 325,238,325,Creative,4,0,0,"Tartare di coregone. 
 Agnello della Val d'Isarco. 
 Tarte Tatin"
-Uliassi,"banchina di Levante 6, SENIGALLIA, 60019, Italy",ITA,Italy,43.7194998,13.2186189,2019,Mauro Uliassi,130 - 206,130.00,206.00,Modern Cuisine,3,0,1,"Rimini fest. 
+Uliassi,"banchina di Levante 6, SENIGALLIA, 60019, Italy",ITA,Italy,43.7194998,13.2186189,2019,Mauro Uliassi,130 - 206,130,206,Modern Cuisine,3,0,1,"Rimini fest. 
 Spigola, pesche, morchelle al vino bianco. 
 Millefoglie, amarene di Cantiano, parfait al verdicchio, e chantilly alla cannella"
-Lasarte,"Mallorca 259, Barcelona, 08008, Spain",ESP,Spain,41.39364,2.16213,2016,Martín Berasategui and Paolo Casagrande,141 - 265,141.00,265.00,Creative,4,0,0,"Ravioli de wagyu y anguila glaseada, crema yodada, raifort y caviar. 
+Lasarte,"Mallorca 259, Barcelona, 08008, Spain",ESP,Spain,41.39364,2.16213,2016,Martín Berasategui and Paolo Casagrande,141 - 265,141,265,Creative,4,0,0,"Ravioli de wagyu y anguila glaseada, crema yodada, raifort y caviar. 
 Pez rey asado con pil pil de almejas, nécora, champagne y una crema fina de avellana. 
 Esferas de cardamomo, manzana y yogur"
-ABaC,"Avenida del Tibidabo 1, Barcelona, 08022, Spain",ESP,Spain,41.41044,2.13654,2018,Jordi Cruz,206 - 227,206.00,227.00,Creative,4,0,1,"Bloody Mary on the rocks. 
+ABaC,"Avenida del Tibidabo 1, Barcelona, 08022, Spain",ESP,Spain,41.41044,2.13654,2018,Jordi Cruz,206 - 227,206,227,Creative,4,0,1,"Bloody Mary on the rocks. 
 Ventresca de atún a la parrilla con crema de compota de ajos, leche de almendras, dátiles y aceite de oliva. 
 Caja frágil de chocolate"
-Quique Dacosta Restaurante,"Rascassa 1 (Urbanización El Poblet), Noroeste : 3 km, Dénia, 03700, Spain",ESP,Spain,38.8537209,0.0829363,2012,Quique Dacosta,227,227.00,227.00,Creative,3,0,0,"Carro de salazones 
+Quique Dacosta Restaurante,"Rascassa 1 (Urbanización El Poblet), Noroeste : 3 km, Dénia, 03700, Spain",ESP,Spain,38.8537209,0.0829363,2012,Quique Dacosta,227,227,227,Creative,3,0,0,"Carro de salazones 
 Raya a la mantequilla negra 
 Sopa de almendras"
-Aponiente,"Francisco Cossi Ochoa (Molino de Mareas El Caño), El Puerto de Santa María, 11500, Spain",ESP,Spain,36.603146,-6.2185998,2018,Ángel León,211 - 243,211.00,243.00,Creative,4,0,0,"Flan de huevas de lisa 
+Aponiente,"Francisco Cossi Ochoa (Molino de Mareas El Caño), El Puerto de Santa María, 11500, Spain",ESP,Spain,36.603146,-6.2185998,2018,Ángel León,211 - 243,211,243,Creative,4,0,0,"Flan de huevas de lisa 
 Botillo marino 
 Quesos del mar"
-El Celler de Can Roca,"Can Sunyer 48, Girona, 17007, Spain",ESP,Spain,41.99331,2.80788,2009,Joan Roca,173 - 233,173.00,233.00,Creative,4,0,0,"Ostra, salsa de hinojo, ajo negro, manzana, algas, champiñón, destilado de tierra y anémonas 
+El Celler de Can Roca,"Can Sunyer 48, Girona, 17007, Spain",ESP,Spain,41.99331,2.80788,2009,Joan Roca,173 - 233,173,233,Creative,4,0,0,"Ostra, salsa de hinojo, ajo negro, manzana, algas, champiñón, destilado de tierra y anémonas 
 Merluza semicurada, jugo de las espinas, pesto de espárragos y rúcula, piparras a la parrilla y aire de aceite de rúcula 
 Gran bombón de chocolate"
-Azurmendi,"Legina Auzoa, Larrabetzu, 48195, Spain",ESP,Spain,43.2605608,-2.8182185,2013,Eneko Atxa,238,238.00,238.00,Creative,4,0,0,"Quisquillas, gel vegetal y granizado de tomate 
+Azurmendi,"Legina Auzoa, Larrabetzu, 48195, Spain",ESP,Spain,43.2605608,-2.8182185,2013,Eneko Atxa,238,238,238,Creative,4,0,0,"Quisquillas, gel vegetal y granizado de tomate 
 Salmonete en dos servicios, a la llama y asado, jugo de pimientos al carbón y perejil 
 Oliva negra, leche de oveja y cacao"
-Restaurante Martín Berasategui,"Loidi 4, Lasarte, 20160, Spain",ESP,Spain,43.26677,-2.01545,2001,Martín Berasategui,195 - 298,195.00,298.00,Creative,4,0,1,"Ensalada de tuétanos de verdura con marisco, crema de lechuga de caserío y jugo yodado 
+Restaurante Martín Berasategui,"Loidi 4, Lasarte, 20160, Spain",ESP,Spain,43.26677,-2.01545,2001,Martín Berasategui,195 - 298,195,298,Creative,4,0,1,"Ensalada de tuétanos de verdura con marisco, crema de lechuga de caserío y jugo yodado 
 Solomillo “Luismi” asado a la brasa sobre lecho de clorofila de acelgas y bombón de queso 
 Limón con jugo de albahaca, judía verde y almendra"
-DiverXO,"Padre Damián 23, Tetuán, 28036, Spain",ESP,Spain,40.4581,-3.68573,2014,David Muñoz,270,270.00,270.00,Creative,3,0,0,"Canapé crujiente de piel de cochinillo, chopitos y mermelada de tomates maduros 
+DiverXO,"Padre Damián 23, Tetuán, 28036, Spain",ESP,Spain,40.4581,-3.68573,2014,David Muñoz,270,270,270,Creative,3,0,0,"Canapé crujiente de piel de cochinillo, chopitos y mermelada de tomates maduros 
 ""Espardenyes"" a la robata con pil-pil de ají amarillo, leche de tigre caliente de salmonetes y anguila ahumada 
 Maíz, lulo, vainilla y la leche que queda en el fondo del bowl después de los cereales"
-Arzak,"Avenida Alcalde José Elosegi 273 (Alto de Miracruz), Donostia-San Sebastián, 20015, Spain",ESP,Spain,43.321111,-1.949167,1989,Juan Mari Arzak and Elena Arzak,195 - 270,195.00,270.00,Creative,3,0,0,"Txangurro amarillo 
+Arzak,"Avenida Alcalde José Elosegi 273 (Alto de Miracruz), Donostia-San Sebastián, 20015, Spain",ESP,Spain,43.321111,-1.949167,1989,Juan Mari Arzak and Elena Arzak,195 - 270,195,270,Creative,3,0,0,"Txangurro amarillo 
 Mero en su plenitud 
 Dulce mezcal"
-Akelare,"Paseo del Padre Orcolaga 56 (Barrio de Igueldo), 7,5 km, Donostia-San Sebastián, 20008, Spain",ESP,Spain,43.307776,-2.043173,2015,Pedro Subijana,249,249.00,249.00,Creative,4,0,0,"Txangurro en ensalada, acelga roja, espinaca y lechuga de Igeldo 
+Akelare,"Paseo del Padre Orcolaga 56 (Barrio de Igueldo), 7,5 km, Donostia-San Sebastián, 20008, Spain",ESP,Spain,43.307776,-2.043173,2015,Pedro Subijana,249,249,249,Creative,4,0,0,"Txangurro en ensalada, acelga roja, espinaca y lechuga de Igeldo 
 Royal de pichón con polenta 
 El postre de la leche de oveja"
-El Cenador de Amós,"Plaza del Sol 15, Villaverde de Pontones, 39793, Spain",ESP,Spain,43.412477,-3.699202,2020,Jesús Sánchez,96 - 173,96.00,173.00,Modern Cuisine,3,0,0,"La huerta navarra 
+El Cenador de Amós,"Plaza del Sol 15, Villaverde de Pontones, 39793, Spain",ESP,Spain,43.412477,-3.699202,2020,Jesús Sánchez,96 - 173,96,173,Modern Cuisine,3,0,0,"La huerta navarra 
 Mero con mantequilla de algas y caviar de cachón 
 Nuestra versión de la tarta San Marcos"
-Restaurant Bareiss,"Hermine-Bareiss-Weg 1, Baiersbronn, 72270, Germany",DEU,Germany,48.520329,8.32683,2008,Claus-Peter Lumpp,135 - 317,135.00,317.00,Classic French,4,1,0,"Lauwarmer bretonischer Hummer mit mariniertem Kürbis 
+Restaurant Bareiss,"Hermine-Bareiss-Weg 1, Baiersbronn, 72270, Germany",DEU,Germany,48.520329,8.32683,2008,Claus-Peter Lumpp,135 - 317,135,317,Classic French,4,1,0,"Lauwarmer bretonischer Hummer mit mariniertem Kürbis 
 Lamm von der Älbler Wacholderweide 
 Topfensoufflé mit Passionsfruchtsauce, Bananen-Kiwisorbet und Vanilleeis"
-Vendôme,"Kadettenstraße, Bergisch Gladbach, 51429, Germany",DEU,Germany,50.966292,7.160676,2005,Joachim Wissler,179 - 319,179.00,319.00,Creative,4,0,0,"Octopus und Steinpilze, Petersilienaioli, Topinambur, Leinsamenvinaigrette 
+Vendôme,"Kadettenstraße, Bergisch Gladbach, 51429, Germany",DEU,Germany,50.966292,7.160676,2005,Joachim Wissler,179 - 319,179,319,Creative,4,0,0,"Octopus und Steinpilze, Petersilienaioli, Topinambur, Leinsamenvinaigrette 
 Rehrücken und Waldheidelbeeren, Räucheraal-Rehleberkompott, Vogelbeeren, Tannenwipfelgelee 
 ""Pure Dark Chocolate"", Grapefruitgranité, Bergamottegelee"
-Rutz,"Chausseestraße 8, Berlin, 10115, Germany",DEU,Germany,52.528244,13.386203,2020,Marco Müller,171 - 214,171.00,214.00,Modern Cuisine,2,0,1,"Muscheln, Dünenkräuter und Aromen, Shoyu 
+Rutz,"Chausseestraße 8, Berlin, 10115, Germany",DEU,Germany,52.528244,13.386203,2020,Marco Müller,171 - 214,171,214,Modern Cuisine,2,0,1,"Muscheln, Dünenkräuter und Aromen, Shoyu 
 Salzwiesenlamm, Zwiebelgewächse und Holunder, Gerste 
 Heidelbeere und Fichte, Amazake"
-Waldhotel Sonnora,"Auf'm Eichelfeld 1, Dreis, 54518, Germany",DEU,Germany,49.937953,6.81114,1999,Clemens Rambichler,122 - 243,122.00,243.00,Classic French,4,0,0,"Carpaccio von bretonischem Kaisergranat mit Imperial-Kaviarcrème und Haselnuss-Limonenmarinade 
+Waldhotel Sonnora,"Auf'm Eichelfeld 1, Dreis, 54518, Germany",DEU,Germany,49.937953,6.81114,1999,Clemens Rambichler,122 - 243,122,243,Classic French,4,0,0,"Carpaccio von bretonischem Kaisergranat mit Imperial-Kaviarcrème und Haselnuss-Limonenmarinade 
 In der Schale gegrillter Hummer mit Langustinencrème 
 Marmoriertes Kokos-Mangoeis mit Ananas „Kreolischer Art“ und Basilikum-Limettensorbet"
-The Table,"Shanghaiallee 15, Hamburg, 20457, Germany",DEU,Germany,53.54262,10.003121,2016,Kevin Fehling,238,238.00,238.00,Creative,3,0,0,"Fjordforelle in indischen Aromen gebeizt, Tandoori, Mango, Senfkörner und Kokossud 
+The Table,"Shanghaiallee 15, Hamburg, 20457, Germany",DEU,Germany,53.54262,10.003121,2016,Kevin Fehling,238,238,238,Creative,3,0,0,"Fjordforelle in indischen Aromen gebeizt, Tandoori, Mango, Senfkörner und Kokossud 
 Rehrücken mit Walnuss-Pfefferkruste, fermentierte Blaubeeren, Sherryessighollandaise und Rosmarinjus 
 Haselnuss-Crémeux, Kalamansigelee, Guave, Bananen-Curryeis, Kurkuma"
-Atelier,"Promenadeplatz 2, München, 80333, Germany",DEU,Germany,48.140287,11.573318,2018,Jan Hartwig,200 - 265,200.00,265.00,Creative French,3,0,0,"Rauchaal und Jungschweinebauch, Zucchini, Dill, Safran-Dashi mit Pastis 
+Atelier,"Promenadeplatz 2, München, 80333, Germany",DEU,Germany,48.140287,11.573318,2018,Jan Hartwig,200 - 265,200,265,Creative French,3,0,0,"Rauchaal und Jungschweinebauch, Zucchini, Dill, Safran-Dashi mit Pastis 
 Soufflierte Wachtelbrust mit Amaranth, geschmorten Pilzen, Lauch und Vin Jaune 
 Karamellisierte Felchlin „Edelweiß“ mit Ingwer und Olivenkrokant"
-Victor's Fine Dining by Christian Bau,"Schlossstraße 27, Perl-Nennig, 66706, Germany",DEU,Germany,49.534914,6.386769,2006,Christian Bau,189 - 308,189.00,308.00,Creative,4,0,0,"Langoustine, Karotte, Maracuja, Bonitoessig 
+Victor's Fine Dining by Christian Bau,"Schlossstraße 27, Perl-Nennig, 66706, Germany",DEU,Germany,49.534914,6.386769,2006,Christian Bau,189 - 308,189,308,Creative,4,0,0,"Langoustine, Karotte, Maracuja, Bonitoessig 
 Kinmedai mit Stabmuscheln, Palmherz, Yuzu-Koshu und XO 
 Dessert aus Matcha, schwarzem Sesam und Mango"
-Restaurant Überfahrt,"Überfahrtstraße 10, Rottach-Egern, 83700, Germany",DEU,Germany,47.696415,11.758168,2014,Christian Jürgens,269 - 334,269.00,334.00,Creative,4,0,1,"Huchen, Saiblingskaviar, Spitzkohl, Vin Jaune 
+Restaurant Überfahrt,"Überfahrtstraße 10, Rottach-Egern, 83700, Germany",DEU,Germany,47.696415,11.758168,2014,Christian Jürgens,269 - 334,269,334,Creative,4,0,1,"Huchen, Saiblingskaviar, Spitzkohl, Vin Jaune 
 Rehrücken, Boudin Noir, Rouennaiser Sauce, Blaubeeren 
 Oma Jürgens warmer Himbeerkuchen, Himbeeren, Milchmädcheneis, Guanaja"
-GästeHaus Klaus Erfort,"Mainzer Straße 95, Saarbrücken, 66121, Germany",DEU,Germany,49.229434,7.007525,2008,Klaus Erfort,114 - 238,114.00,238.00,Classic French,3,0,1,"Gemüseacker mit bretonischem Hummer, Olivenkrokant und pochiertem Wachtelei 
+GästeHaus Klaus Erfort,"Mainzer Straße 95, Saarbrücken, 66121, Germany",DEU,Germany,49.229434,7.007525,2008,Klaus Erfort,114 - 238,114,238,Classic French,3,0,1,"Gemüseacker mit bretonischem Hummer, Olivenkrokant und pochiertem Wachtelei 
 Bresse-Poularde mit Trüffel, Kartoffelschaum und jungem Lauch 
 Délice von der Marone mit heimischer Quitte und Gewürzsud"
-Aqua,"Parkstraße 1, Wolfsburg, 38440, Germany",DEU,Germany,52.433172,10.78997,2009,Sven Elverfeld,211 - 276,211.00,276.00,Creative,4,0,0,"Sepia, Belugalinsen und Imperial Kaviar, Salicorne, Schaum vom geräucherten Stör 
+Aqua,"Parkstraße 1, Wolfsburg, 38440, Germany",DEU,Germany,52.433172,10.78997,2009,Sven Elverfeld,211 - 276,211,276,Creative,4,0,0,"Sepia, Belugalinsen und Imperial Kaviar, Salicorne, Schaum vom geräucherten Stör 
 Rücken, Ragout und Bries vom Lamm, Artischocke, Quinoa 
 Heu und Grapefruit, Sauerampfer, Gewürztagetes, Holunder, Weizengras"
-Lung King Heen,"8 Finance Street, Central, Hong Kong",CHN,Hong Kong,22.28666,114.156613,2009,Chan Yan Tak,77 - 384,77.00,384.00,Cantonese,4,0,0,
-8½ Otto e Mezzo Bombana,"18 Chater Road, Central, Hong Kong",CHN,Hong Kong,22.281513,114.158777,2012,Umberto Bombana and Keith Yam Ka Lok,101 - 271,101.00,271.00,Italian,4,0,0,
-L'Atelier de Joël Robuchon,"15 Queen's Road Central, Central, Hong Kong",CHN,Hong Kong,22.2816,114.157902,2012,David Alves,64 - 320,64.00,320.00,French Contemporary,2,1,0,"Duck foie gras cream with fine chicken jelly and sweet corn coulis 
+Lung King Heen,"8 Finance Street, Central, Hong Kong",CHN,Hong Kong,22.28666,114.156613,2009,Chan Yan Tak,77 - 384,77,384,Cantonese,4,0,0,Not available
+8½ Otto e Mezzo Bombana,"18 Chater Road, Central, Hong Kong",CHN,Hong Kong,22.281513,114.158777,2012,Umberto Bombana and Keith Yam Ka Lok,101 - 271,101,271,Italian,4,0,0,Not available
+L'Atelier de Joël Robuchon,"15 Queen's Road Central, Central, Hong Kong",CHN,Hong Kong,22.2816,114.157902,2012,David Alves,64 - 320,64,320,French Contemporary,2,1,0,"Duck foie gras cream with fine chicken jelly and sweet corn coulis 
 Main lobster spaghetti with coral emulsion 
 Chocolate soufflé with a pistachio ice cream"
-Forum Restaurant,"255-257 Gloucester Road, Causeway Bay, Hong Kong",CHN,Hong Kong,22.281359,114.182319,2020,Yeung Koon Yat,26 - 258,26.00,258.00,Cantonese,2,0,0,
-Sushi Shikon,"15 Queen'S Road Central, Central, Hong Kong",CHN,Hong Kong,22.280538,114.157903,2014,Yoshiharu Kakinuma,232 - 451,232.00,451.00,Sushi,1,0,0,
-T'ang Court,"8 Peking Road, Tsim Sha Tsui, Hong Kong",CHN,Hong Kong,22.296396,114.1675573,2016,Kwong Wai Keung,49 - 219,49.00,219.00,Cantonese,4,0,0,
-Caprice,"8 Finance Street, Central, Hong Kong",CHN,Hong Kong,22.286604,114.156569,2019,Guillaume Galliot,83 - 335,83.00,335.00,French Contemporary,5,0,0,
-Jade Dragon,"Estrada do Istmo, Cotai, Macau, Macao",CHN,Macau,22.149753,113.564991,2019,Kelvin Au Yeung,"300 - 2,000 ALL",3.00,17.00,Cantonese,4,0,0,
-Robuchon au Dôme,"Avenida de Lisboa, Macau, Macau, Macao",CHN,Macau,22.190892,113.54343,2009,Julien Tongourian,86 - 436,86.00,436.00,French Contemporary,5,0,0,
-The Eight,"Avenida de Lisboa, Macau, Macau, Macao",CHN,Macau,22.190918,113.54348,2014,Cheung Tan-leung,50 - 374,50.00,374.00,Cantonese,4,0,0,
+Forum Restaurant,"255-257 Gloucester Road, Causeway Bay, Hong Kong",CHN,Hong Kong,22.281359,114.182319,2020,Yeung Koon Yat,26 - 258,26,258,Cantonese,2,0,0,Not available
+Sushi Shikon,"15 Queen'S Road Central, Central, Hong Kong",CHN,Hong Kong,22.280538,114.157903,2014,Yoshiharu Kakinuma,232 - 451,232,451,Sushi,1,0,0,Not available
+T'ang Court,"8 Peking Road, Tsim Sha Tsui, Hong Kong",CHN,Hong Kong,22.296396,114.1675573,2016,Kwong Wai Keung,49 - 219,49,219,Cantonese,4,0,0,Not available
+Caprice,"8 Finance Street, Central, Hong Kong",CHN,Hong Kong,22.286604,114.156569,2019,Guillaume Galliot,83 - 335,83,335,French Contemporary,5,0,0,Not available
+Jade Dragon,"Estrada do Istmo, Cotai, Macau, Macao",CHN,Macau,22.149753,113.564991,2019,Kelvin Au Yeung,"300 - 2,000 ALL",3,17,Cantonese,4,0,0,Not available
+Robuchon au Dôme,"Avenida de Lisboa, Macau, Macau, Macao",CHN,Macau,22.190892,113.54343,2009,Julien Tongourian,86 - 436,86,436,French Contemporary,5,0,0,Not available
+The Eight,"Avenida de Lisboa, Macau, Macau, Macao",CHN,Macau,22.190918,113.54348,2014,Cheung Tan-leung,50 - 374,50,374,Cantonese,4,0,0,Not available
