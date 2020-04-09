@@ -35,8 +35,8 @@ h4 {
   cursor: move;
   /* Fade out while not hovering */
   opacity: 0.55;
-  zoom: 0.9;
-  transition: opacity 500ms 1s;
+  /*zoom: 0.9;
+  transition: opacity 500ms 1s; */
 }
 
 #controls:hover {
