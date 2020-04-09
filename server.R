@@ -50,22 +50,22 @@ server <- function(input, output) {
   
   
   
-  output$Country <- renderPlot({
+  output$Country <- renderPlotly({
     temp = as.data.frame(table(filtered()$Country))
-    ggplot(temp,
+    p = ggplot(temp,
            aes(
              x = reorder(Var1, Freq),
              y = Freq,
-             main = "Michelin 3-Starred Restaurants"
+             main = "Michelin 3-Starred Restaurants",
+             label = Freq
            )) +
       geom_bar(stat = "identity", fill = "#9A1F33") +
-      geom_text(aes(label = Freq, Freq = Freq + 10),
-                size = 7,
-                color = "#e7c600") +
       coord_flip() +
       labs(y = "No. of restaurants") +
       theme(axis.title.y = element_blank())
     
+    ggplotly(p, tooltip=c("label"))%>%
+      config(displayModeBar = FALSE)
   })
   
   filtered <- reactive({
@@ -121,12 +121,11 @@ server <- function(input, output) {
         zoomControl = FALSE,
         dragging = TRUE,
         zoomSnap = .55,
-        minZoom = 2.3
-        #maxZoom = 10
+        minZoom = 2
       )
     ) %>% setView(lng = 10,
                   lat = 42,
-                  zoom = 2.3) %>% setMaxBounds(
+                  zoom = 2) %>% setMaxBounds(
                     lng1 = -180,
                     lat1 = -85,
                     lng2 = 180,
@@ -170,6 +169,12 @@ server <- function(input, output) {
           "Specialty: ",
           "</b>",
           Specialty,
+          "<br>",
+          "<b>",
+          "URL: ",
+          "</b>",
+          URL,
+          "</a>",
           "<br>"
         ),
         
@@ -203,15 +208,10 @@ server <- function(input, output) {
         ),
         layerId = ~ name
         
-      ) %>% addLegend(
-        "bottomright",
-        pal = legend,
-        values = ~ mcl_countries,
-        title = "<small>Number of Michelin Restaurants</small>"
-      ) %>% addEasyButton(easyButton(
+      )%>% addEasyButton(easyButton(
         icon = "fa-globe",
         title = "Zoom to Default",
-        onClick = JS("function(btn, map){ map.setZoom(1);map.setView([42, 10], 0); }")
+        onClick = JS("function(btn, map){ map.setZoom(2);map.setView([42, 10], 0); }")
       ))
     
   })
@@ -229,15 +229,15 @@ server <- function(input, output) {
         "Norway",
         "United Kingdom",
         "Germany",
-        "France",
         "Italy",
         "Spain",
         "South Korea"
       )
     zoom4.5 <- c("China")
     zoom6.5 <- c("Netherlands", "Belgium", "Denmark", "Switzerland","Austria")
-    zoom7 <- c("Taiwan")
+    zoom7 <- c("Singapore", "Taiwan")
     zoom5 <- c("Sweden")
+    zoom6 <- c("France")
     if (sub$NAME[1] %in% zoom5.5) {
       temp = 5.5
     }
@@ -251,6 +251,8 @@ server <- function(input, output) {
       temp = 5
     } else if (sub$NAME[1] %in% zoom6.5) {
       temp = 6.5
+    }else if (sub$NAME[1] %in% zoom6) {
+      temp = 6
     }
     
     
