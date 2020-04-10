@@ -33,7 +33,7 @@ server <- function(input, output) {
   output$cuisineOutput <- renderUI({
     pickerInput(
       "cuisineInput",
-      label = p("Cuisine Type:", style = "font-weight:bold"),
+      label = p("Cuisine Type:", style = "font-weight:bold;color:#9A1F33;"),
       choices = c(sort(unique(
         mcl$Cuisine_Type
       ))),
@@ -43,8 +43,9 @@ server <- function(input, output) {
     )
   })
   
+
   output$restaurantOutput <- renderUI({
-    x <- paste0(filtered()$Restaurant_name, sep = "<br>")
+    x <- paste0(img(src="star1.png"),filtered()$Restaurant_name, sep = "<br>")
     HTML(x)
   })
   
@@ -58,10 +59,11 @@ server <- function(input, output) {
              y = Freq,
              label = Freq
            )) +
-      geom_bar(stat = "identity", fill = "#9A1F33") +
+      geom_bar(stat = "identity", fill = "#F6C444") +
       coord_flip() +
       labs(y = "No. of Restaurants") +
-      theme(axis.title.y = element_blank())
+      theme(axis.title.y = element_blank()) +
+      theme(axis.text=element_text(size=8))
     
     ggplotly(p, tooltip=c("label"))%>%
       config(displayModeBar = FALSE)
@@ -101,6 +103,7 @@ server <- function(input, output) {
                         ylim = ranges$y,
                         expand = TRUE) +
         theme(axis.title.y = element_blank()) +
+        theme(axis.text=element_text(size=8)) +
         labs(x = "Average Price")
     
     ggplotly(q, tooltip=c("z", "y", "x"))%>%
@@ -298,7 +301,7 @@ server <- function(input, output) {
     if(is.null(input$mymap_zoom)){
       print("is null")
     }else
-      if(input$mymap_zoom > 5.5){
+      if(input$mymap_zoom > 7){
         print("bigger than 5")
         leafletProxy("mymap") %>%clearMarkers()%>%addMarkers(
           data = filtered(),
@@ -348,7 +351,7 @@ server <- function(input, output) {
           ),
           
         )
-      }else if(input$mymap_zoom < 5.5){
+      }else if(input$mymap_zoom < 7){
         print("less than 5")
         leafletProxy("mymap") %>%clearMarkers()%>%addMarkers(
           data = filtered(),
