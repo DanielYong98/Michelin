@@ -130,55 +130,7 @@ server <- function(input, output) {
                     lat1 = -85,
                     lng2 = 180,
                     lat2 = 85
-                  ) %>% addProviderTiles(providers$CartoDB.Positron) %>%
-      addMarkers(
-        data = filtered(),
-        lat = ~ Latitude,
-        lng = ~ Longitude,
-        label = ~ Restaurant_name,
-        labelOptions = labelOptions(
-          direction = "top",
-          style = list(
-            "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
-            "font-size" = "14px",
-            "font-style" = "italic",
-            "border-color" = "rgba(0,0,0,0.5)"
-          )
-        ),
-        icon = starIcon,
-        popup = ~ paste(
-          "<h4 style='color:#9A1F33'>",
-          Restaurant_name,
-          "</h4>",
-          "<b>",
-          "Cuisine: ",
-          "</b>",
-          Cuisine_Type,
-          "<br>",
-          "<b>",
-          "Awarded year: ",
-          "</b>",
-          Awarded_since,
-          "<br>",
-          "<b>",
-          "Chef: ",
-          "</b>",
-          Chef,
-          "<br>",
-          "<b>",
-          "Specialty: ",
-          "</b>",
-          Specialty,
-          "<br>",
-          "<b>",
-          "URL: ",
-          "</b>",
-          URL,
-          "</a>",
-          "<br>"
-        ),
-        
-      ) %>% addPolygons(
+                  ) %>% addProviderTiles(providers$CartoDB.Positron) %>% addPolygons(
         stroke = TRUE,
         weight = 1,
         #stroke
@@ -199,12 +151,13 @@ server <- function(input, output) {
         
         label =  ~ name,
         labelOptions = labelOptions(
+          
           direction = "top",
           style = list(
             "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
             "font-size" = "14px",
             "border-color" = "rgba(0,0,0,0.5)"
-          )
+          ),
         ),
         layerId = ~ name
         
@@ -332,6 +285,115 @@ server <- function(input, output) {
       ranges$y <- NULL
     }
   })
+  
+  #static label if zoom reaches a certain level
+  observe({
+      print(input$mymap_zoom)           # Display zoom level in the console
+    if(is.null(input$mymap_zoom)){
+      print("is null")
+    }else
+      if(input$mymap_zoom > 5.5){
+        print("bigger than 5")
+        leafletProxy("mymap") %>%clearMarkers()%>%addMarkers(
+          data = filtered(),
+          lat = ~ Latitude,
+          lng = ~ Longitude,
+          label = ~ Restaurant_name,
+          labelOptions = labelOptions(
+            noHide = T,
+            direction = "top",
+            style = list(
+              "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
+              "font-size" = "14px",
+              "font-style" = "italic",
+              "border-color" = "rgba(0,0,0,0.5)"
+            )
+          ),
+          icon = starIcon,
+          uLink <- ~URL,
+          popup = ~ paste(
+            "<h4 style='color:#9A1F33'>",
+            Restaurant_name,
+            "</h4>",
+            "<b>",
+            "Cuisine: ",
+            "</b>",
+            Cuisine_Type,
+            "<br>",
+            "<b>",
+            "Awarded year: ",
+            "</b>",
+            Awarded_since,
+            "<br>",
+            "<b>",
+            "Chef: ",
+            "</b>",
+            Chef,
+            "<br>",
+            "<b>",
+            "Specialty: ",
+            "</b>",
+            Specialty,
+            "<br>",
+            "<b>",
+            "<a href='http://guide.michelin.com/en'>Visit Website</a>",
+            "</b>",
+            "<br>"
+          ),
+          
+        )
+      }else if(input$mymap_zoom < 5.5){
+        print("less than 5")
+        leafletProxy("mymap") %>%clearMarkers()%>%addMarkers(
+          data = filtered(),
+          lat = ~ Latitude,
+          lng = ~ Longitude,
+          label = ~ Restaurant_name,
+          labelOptions = labelOptions(
+            hide = T,
+            direction = "top",
+            style = list(
+              "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
+              "font-size" = "14px",
+              "font-style" = "italic",
+              "border-color" = "rgba(0,0,0,0.5)"
+            )
+          ),
+          icon = starIcon,
+          popup = ~ paste(
+            "<h4 style='color:#9A1F33'>",
+            Restaurant_name,
+            "</h4>",
+            "<b>",
+            "Cuisine: ",
+            "</b>",
+            Cuisine_Type,
+            "<br>",
+            "<b>",
+            "Awarded year: ",
+            "</b>",
+            Awarded_since,
+            "<br>",
+            "<b>",
+            "Chef: ",
+            "</b>",
+            Chef,
+            "<br>",
+            "<b>",
+            "Specialty: ",
+            "</b>",
+            Specialty,
+            "<br>",
+            "<b>",
+            "<a href='http://guide.michelin.com/en'>Visit Website</a>",
+            "</b>"
+          ),
+          
+        )
+      }
+    }
+  )
+  
   
   
   # #table/list
