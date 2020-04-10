@@ -56,12 +56,11 @@ server <- function(input, output) {
            aes(
              x = reorder(Var1, Freq),
              y = Freq,
-             main = "Michelin 3-Starred Restaurants",
              label = Freq
            )) +
       geom_bar(stat = "identity", fill = "#9A1F33") +
       coord_flip() +
-      labs(y = "No. of restaurants") +
+      labs(y = "No. of Restaurants") +
       theme(axis.title.y = element_blank())
     
     ggplotly(p, tooltip=c("label"))%>%
@@ -89,19 +88,24 @@ server <- function(input, output) {
   
   ranges <- reactiveValues(x = NULL, y = NULL)
   
-  output$resOutput <- renderPlot({
+  output$resOutput <- renderPlotly({
     res <-
       data.frame(
-        x = (filtered()$Price_Lower + filtered()$Price_Upper) / 2,
-        y = filtered()$Country
+        AVG_Price = (filtered()$Price_Lower + filtered()$Price_Upper) / 2,
+        Country = filtered()$Country,
+        Restaurant_Name = filtered()$Restaurant_name
       )
-    ggplot(res, aes(x = x, y = y)) +
-      geom_point(size = 3, color = "#9A1F33") +
-      coord_cartesian(xlim = ranges$x,
-                      ylim = ranges$y,
-                      expand = TRUE) +
-      theme(axis.title.y = element_blank()) +
-      labs(x = "Average Price")
+    q = ggplot(res, aes(x = AVG_Price, y = Country, z = Restaurant_Name)) +
+        geom_point(size = 2, color = "#9A1F33") +
+        coord_cartesian(xlim = ranges$x,
+                        ylim = ranges$y,
+                        expand = TRUE) +
+        theme(axis.title.y = element_blank()) +
+        labs(x = "Average Price")
+    
+    ggplotly(q, tooltip=c("z", "y", "x"))%>%
+      config(displayModeBar = FALSE)
+  
   })
   
   #custom marker
@@ -123,14 +127,16 @@ server <- function(input, output) {
         zoomSnap = .55,
         minZoom = 2
       )
-    ) %>% setView(lng = 10,
+    ) %>% setView(lng = 10, #2
                   lat = 42,
                   zoom = 2) %>% setMaxBounds(
-                    lng1 = -180,
-                    lat1 = -85,
-                    lng2 = 180,
-                    lat2 = 85
+
+                    lng1 = -180, #240
+                    lat1 = -85,  #-55
+                    lng2 = 180,  #242
+                    lat2 = 85    #82
                   ) %>% addProviderTiles(providers$CartoDB.Positron) %>% addPolygons(
+
         stroke = TRUE,
         weight = 1,
         #stroke
