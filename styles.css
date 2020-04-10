@@ -34,14 +34,14 @@ h4 {
   padding: 0 10px 10px 10px;
   cursor: move;
   /* Fade out while not hovering */
-  opacity: 0.55;
+   opacity: 0.75;
   /*zoom: 0.9;
   transition: opacity 500ms 1s; */
 }
 
 #controls:hover {
   /* Fade in while hovering */
-  opacity: 0.75;
+  opacity: 1.0; 
   transition-delay: 0;
 }
 
