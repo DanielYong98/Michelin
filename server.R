@@ -45,7 +45,7 @@ server <- function(input, output) {
   
 
   output$restaurantOutput <- renderUI({
-    x <- paste0(img(src="star1.png"),filtered()$Restaurant_name, sep = "<br>")
+    x <- paste0(img(src="star1.png", height = '15px', width = '15px'),filtered()$Restaurant_name, sep = "<br>")
     HTML(x)
   })
   
