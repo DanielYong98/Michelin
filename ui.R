@@ -8,7 +8,11 @@ library(plotly)
 library(plyr)
 
 
-ui <- fluidPage(
+ui <- fluidPage(tags$script("
+    Shiny.addCustomMessageHandler('mymap_shape_click', function('NULL') {
+    Shiny.setInputValue('mymap_shape_click', 'NULL');
+    });
+  "),
   titlePanel(setBackgroundColor("#9A1F33"),
              title =
                div(

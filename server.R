@@ -72,6 +72,11 @@ server <- function(input, output) {
   filtered <- reactive({
     mcl %>%
       filter(
+        if(!is.null(input$mymap_shape_click)){
+          Country == input$mymap_shape_click$id
+        }
+        else
+          TRUE,
         Price_Upper >= input$priceInput[1],
         Price_Upper <= input$priceInput[2],
         Cuisine_Type %in% input$cuisineInput,
@@ -171,12 +176,26 @@ server <- function(input, output) {
         layerId = ~ name
         
       )%>% addEasyButton(easyButton(
+        id = "easyButton",
         icon = "fa-globe",
         title = "Zoom to Default",
-        onClick = JS("function(btn, map){ map.setZoom(2);map.setView([42, 10], 0); }")
+        onClick = JS("function(btn, map){ 
+                     map.setZoom(2);
+                     map.setView([42, 10], 0);
+                     
+                     }")
       ))
     
   })
+  
+  observeEvent(input$easyButton, {
+    session$sendCustomMessage("mymap_shape_click", 'null')
+  })
+  
+  # observeEvent(input$mymap_shape_click$id, {
+  #   print("observeEvent of shapeclick")
+  #   print(input$mymap_shape_click)
+  # })
   
   observe({
     outofBounds <- FALSE
@@ -319,7 +338,7 @@ server <- function(input, output) {
             )
           ),
           icon = starIcon,
-          uLink <- ~URL,
+          
           popup = ~ paste(
             "<h4 style='color:#9A1F33'>",
             Restaurant_name,
