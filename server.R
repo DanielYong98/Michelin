@@ -30,6 +30,7 @@ legend <- colorBin("green", domain = mcl$countries, bins = bins)
 plot_map = worldcountry[worldcountry$id %in% mcl_countries, ]
 
 server <- function(input, output) {
+  testI <- reactiveVal(NULL)
   output$cuisineOutput <- renderUI({
     pickerInput(
       "cuisineInput",
@@ -72,8 +73,8 @@ server <- function(input, output) {
   filtered <- reactive({
     mcl %>%
       filter(
-        if(!is.null(input$mymap_shape_click)){
-          Country == input$mymap_shape_click$id
+        if(!is.null(testI())){
+          Country == testI()
         }
         else
           TRUE,
@@ -183,19 +184,16 @@ server <- function(input, output) {
   
   #reset zoom observer
   observeEvent(input$zoomer, {
-    leafletProxy("mymap") %>% setView(lat = 42, lng = 10, zoom = 0) 
+    leafletProxy("mymap") %>% setView(lat = 42, lng = 10, zoom = 0)
+    
+    #set clicked country to null
+    testI(NULL)
   })
   
-  observeEvent(input$easyButton, {
-    session$sendCustomMessage("mymap_shape_click", 'null')
-  })
   
-  # observeEvent(input$mymap_shape_click$id, {
-  #   print("observeEvent of shapeclick")
-  #   print(input$mymap_shape_click)
-  # })
+
   
-  observe({
+  observeEvent(input$mymap_shape_click,{
     outofBounds <- FALSE
     click = input$mymap_shape_click
     #  subset the spdf object to get the lat, lng and country name of the selected shape (Country in this case)
@@ -254,7 +252,8 @@ server <- function(input, output) {
                 lat = lat,
                 zoom = temp)
     }
-    
+    #set reactive variable to clicked country
+    testI(input$mymap_shape_click$id)
     
   })
   #
