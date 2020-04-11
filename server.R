@@ -177,15 +177,13 @@ server <- function(input, output) {
         ),
         layerId = ~ name
         
-      )%>% addEasyButton(easyButton(
-        id = "easyButton",
-        icon = "fa-globe",
-        title = "Zoom to Default",
-
-        onClick = JS("function(btn, map){ map.setZoom(2);map.setView([42, 10], 0);}")
-
-      ))
+      )
     
+  })
+  
+  #reset zoom observer
+  observeEvent(input$zoomer, {
+    leafletProxy("mymap") %>% setView(lat = 42, lng = 10, zoom = 0) 
   })
   
   observeEvent(input$easyButton, {

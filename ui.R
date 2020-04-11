@@ -42,6 +42,9 @@ ui <- fluidPage(
         )
       ),
       
+      #RESET ZOOM
+      actionButton("zoomer", "Reset zoom"),
+      
       #Price selector
      sliderInput("priceInput", p("Price",style="font-weight:bold;color:#bd2333;font-size:15px;"), 17, 900, c(17, 900), pre = "$"),
       
