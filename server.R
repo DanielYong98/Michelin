@@ -33,7 +33,7 @@ server <- function(input, output) {
   output$cuisineOutput <- renderUI({
     pickerInput(
       "cuisineInput",
-      label = p("Cuisine Type:", style = "font-weight:bold;color:#9A1F33;"),
+      label = p("Cuisine Type:", style = "font-weight:bold;color:#bd2333;font-size:15px;"),
       choices = c(sort(unique(
         mcl$Cuisine_Type
       ))),
@@ -45,7 +45,7 @@ server <- function(input, output) {
   
 
   output$restaurantOutput <- renderUI({
-    x <- paste0(img(src="star1.png", height = '15px', width = '15px'),filtered()$Restaurant_name, sep = "<br>")
+    x <- paste0(img(src="star1.png", height = '15px', width = '15px'),sort(filtered()$Restaurant_name), sep = "<br>")
     HTML(x)
   })
   
@@ -72,6 +72,11 @@ server <- function(input, output) {
   filtered <- reactive({
     mcl %>%
       filter(
+        if(!is.null(input$mymap_shape_click)){
+          Country == input$mymap_shape_click$id
+        }
+        else
+          TRUE,
         Price_Upper >= input$priceInput[1],
         Price_Upper <= input$priceInput[2],
         Cuisine_Type %in% input$cuisineInput,
@@ -98,7 +103,7 @@ server <- function(input, output) {
         Restaurant_Name = filtered()$Restaurant_name
       )
     q = ggplot(res, aes(x = AVG_Price, y = Country, z = Restaurant_Name)) +
-        geom_point(size = 2, color = "#9A1F33") +
+        geom_point(size = 2, color = "#bd2333") +
         coord_cartesian(xlim = ranges$x,
                         ylim = ranges$y,
                         expand = TRUE) +
@@ -134,9 +139,9 @@ server <- function(input, output) {
                   lat = 42,
                   zoom = 2) %>% setMaxBounds(
 
-                    lng1 = -180, #240
-                    lat1 = -85,  #-55
-                    lng2 = 180,  #242
+                    lng1 = -195, #240
+                    lat1 = -55,  #-55
+                    lng2 = 210,  #242
                     lat2 = 85    #82
                   ) %>% addProviderTiles(providers$CartoDB.Positron) %>% addPolygons(
 
@@ -146,7 +151,7 @@ server <- function(input, output) {
         color = "black",
         #stroke
         smoothFactor = 0.2,
-        fillColor = "#9A1F33",
+        fillColor = "#bd2333",
         fillOpacity = 0.1,
         highlight = highlightOptions(
           stroke = TRUE,
@@ -165,6 +170,8 @@ server <- function(input, output) {
           style = list(
             "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
             "font-size" = "14px",
+            "color" = "#bd2333",
+            "background-color" = "#f0d2d7",
             "border-color" = "rgba(0,0,0,0.5)"
           ),
         ),
@@ -173,7 +180,7 @@ server <- function(input, output) {
       )%>% addEasyButton(easyButton(
         icon = "fa-globe",
         title = "Zoom to Default",
-        onClick = JS("function(btn, map){ map.setZoom(2);map.setView([42, 10], 0); }")
+        onClick = JS("function(btn, map){ map.setZoom(2);map.setView([42, 10], 0);}")
       ))
     
   })
@@ -315,13 +322,15 @@ server <- function(input, output) {
               "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
               "font-size" = "14px",
               "font-style" = "italic",
+              "color" = "black",
+              "background-color" = "#f2d17c",
               "border-color" = "rgba(0,0,0,0.5)"
             )
           ),
           icon = starIcon,
           uLink <- ~URL,
           popup = ~ paste(
-            "<h4 style='color:#9A1F33'>",
+            "<h4 style='color:#bd2333'>",
             Restaurant_name,
             "</h4>",
             "<b>",
@@ -345,7 +354,7 @@ server <- function(input, output) {
             Specialty,
             "<br>",
             "<b>",
-            "<a href='http://guide.michelin.com/en'>Visit Website</a>",
+            "<a href='https://guide.michelin.com/en/bourgogne-franche-comte/chagny/restaurant/maison-lameloise'>More Information</a>",
             "</b>",
             "<br>"
           ),
@@ -365,12 +374,14 @@ server <- function(input, output) {
               "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
               "font-size" = "14px",
               "font-style" = "italic",
+              "color" = "black",
+              "background-color" = "#f2d17c",
               "border-color" = "rgba(0,0,0,0.5)"
             )
           ),
           icon = starIcon,
           popup = ~ paste(
-            "<h4 style='color:#9A1F33'>",
+            "<h4 style='color:#bd2333'>",
             Restaurant_name,
             "</h4>",
             "<b>",
@@ -394,7 +405,7 @@ server <- function(input, output) {
             Specialty,
             "<br>",
             "<b>",
-            "<a href='http://guide.michelin.com/en'>Visit Website</a>",
+            "<a href='https://guide.michelin.com/en/bourgogne-franche-comte/chagny/restaurant/maison-lameloise'>More Information</a>",
             "</b>"
           ),
           
