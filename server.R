@@ -34,7 +34,7 @@ server <- function(input, output) {
   output$cuisineOutput <- renderUI({
     pickerInput(
       "cuisineInput",
-      label = p("Cuisine Type:", style = "font-weight:bold;color:#bd2333;font-size:15px;"),
+      label = p("Cuisine Type:", style = "font-weight:bold;color:#bd2330;font-size:15px;"),
       choices = c(sort(unique(
         mcl$Cuisine_Type
       ))),
@@ -60,7 +60,7 @@ server <- function(input, output) {
              y = Freq,
              label = Freq
            )) +
-      geom_bar(stat = "identity", fill = "#F6C444") +
+      geom_bar(stat = "identity", fill = "#f4c912") +
       coord_flip() +
       labs(y = "No. of Restaurants") +
       theme(axis.title.y = element_blank()) +
@@ -104,7 +104,7 @@ server <- function(input, output) {
         Restaurant_Name = filtered()$Restaurant_name
       )
     q = ggplot(res, aes(x = AVG_Price, y = Country, z = Restaurant_Name)) +
-        geom_point(size = 2, color = "#bd2333") +
+        geom_point(size = 2, color = "#bd2330") +
         coord_cartesian(xlim = ranges$x,
                         ylim = ranges$y,
                         expand = TRUE) +
@@ -152,7 +152,7 @@ server <- function(input, output) {
         color = "black",
         #stroke
         smoothFactor = 0.2,
-        fillColor = "#bd2333",
+        fillColor = "#bd2330",
         fillOpacity = 0.1,
         highlight = highlightOptions(
           stroke = TRUE,
@@ -171,7 +171,7 @@ server <- function(input, output) {
           style = list(
             "box-shadow" = "3px 3px rgba(0,0,0,0.25)",
             "font-size" = "14px",
-            "color" = "#bd2333",
+            "color" = "#bd2330",
             "background-color" = "#f0d2d7",
             "border-color" = "rgba(0,0,0,0.5)"
           ),
@@ -332,14 +332,14 @@ server <- function(input, output) {
               "font-size" = "14px",
               "font-style" = "italic",
               "color" = "black",
-              "background-color" = "#f2d17c",
+              "background-color" = "#f4c912",
               "border-color" = "rgba(0,0,0,0.5)"
             )
           ),
           icon = starIcon,
           
           popup = ~ paste(
-            "<h4 style='color:#bd2333'>",
+            "<h4 style='color:#bd2330'>",
             Restaurant_name,
             "</h4>",
             "<b>",
@@ -384,13 +384,13 @@ server <- function(input, output) {
               "font-size" = "14px",
               "font-style" = "italic",
               "color" = "black",
-              "background-color" = "#f2d17c",
+              "background-color" = "#f4c912",
               "border-color" = "rgba(0,0,0,0.5)"
             )
           ),
           icon = starIcon,
           popup = ~ paste(
-            "<h4 style='color:#bd2333'>",
+            "<h4 style='color:#bd2330'>",
             Restaurant_name,
             "</h4>",
             "<b>",
